@@ -45,17 +45,29 @@ public class GameWin : MonoBehaviour
         GameObject ButtonRef = GameObject.FindGameObjectWithTag("Event").GetComponent<EventSystem>().currentSelectedGameObject;
         if (coin >= shopItems[2, ButtonRef.GetComponent<ItemsShop>().ItemID] && shopItems[3, ButtonRef.GetComponent<ItemsShop>().ItemID] > 0)
         {
-            if(shopItems[1, ButtonRef.GetComponent<ItemsShop>().ItemID] ==1 )
+            if(shopItems[1, ButtonRef.GetComponent<ItemsShop>().ItemID] ==1)
             {
                 player.coins -= shopItems[2, ButtonRef.GetComponent<ItemsShop>().ItemID];
                 shopItems[3, ButtonRef.GetComponent<ItemsShop>().ItemID]--;
                 player.healthPlayer = data.healthPlayer += 1000;
                 // CoinsText.text = "Coins: " + coin.ToString();
                 ButtonRef.GetComponent<ItemsShop>().QuantityText.text = shopItems[3, ButtonRef.GetComponent<ItemsShop>().ItemID].ToString();        
-
+            }
+            if(shopItems[1, ButtonRef.GetComponent<ItemsShop>().ItemID] ==2){
+                player.coins -= shopItems[2, ButtonRef.GetComponent<ItemsShop>().ItemID];
+                shopItems[3, ButtonRef.GetComponent<ItemsShop>().ItemID]--;
+                player.dame = data.dame*2;
+                // CoinsText.text = "Coins: " + coin.ToString();
+                ButtonRef.GetComponent<ItemsShop>().QuantityText.text = shopItems[3, ButtonRef.GetComponent<ItemsShop>().ItemID].ToString();
+            }
+            if(shopItems[1, ButtonRef.GetComponent<ItemsShop>().ItemID] ==4){
+                player.coins -= shopItems[2, ButtonRef.GetComponent<ItemsShop>().ItemID];
+                shopItems[3, ButtonRef.GetComponent<ItemsShop>().ItemID]--;
+                player.healthPlayer = data.maxHealth;
+                // CoinsText.text = "Coins: " + coin.ToString();
+                ButtonRef.GetComponent<ItemsShop>().QuantityText.text = shopItems[3, ButtonRef.GetComponent<ItemsShop>().ItemID].ToString();
             }
             // player.healthPlayer = data.healthPlayer;
-            player.dame = data.dame;
             SaveSystem.SavePlayer(player);
 
         }
