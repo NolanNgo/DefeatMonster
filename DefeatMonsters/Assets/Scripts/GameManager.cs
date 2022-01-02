@@ -20,6 +20,7 @@ public class GameManager : MonoBehaviour
 
     public void GameOver()
     {
+        
         gameover.SetActive(true);
     }  
 

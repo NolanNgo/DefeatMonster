@@ -17739,6 +17739,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   coin: 1000
   CoinsText: {fileID: 1918218942}
+  healthPlayer: 0
+  maxHealth: 0
+  dame: 0
+  coins: 0
+  data:
+    healthPlayer: 0
+    maxHealth: 0
+    dame: 0
+    coins: 0
+  player: {fileID: 429769107}
 --- !u!1 &1145602436
 GameObject:
   m_ObjectHideFlags: 0
