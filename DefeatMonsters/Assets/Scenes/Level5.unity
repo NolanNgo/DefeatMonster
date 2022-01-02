@@ -1893,6 +1893,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   coin: 1000
   CoinsText: {fileID: 955272398}
+  healthPlayer: 0
+  maxHealth: 0
+  dame: 0
+  coins: 0
+  data:
+    healthPlayer: 0
+    maxHealth: 0
+    dame: 0
+    coins: 0
+  player: {fileID: 2031837397}
 --- !u!1 &100634156
 GameObject:
   m_ObjectHideFlags: 0
@@ -38418,6 +38428,17 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e2c517e6fc0f3064f9cf10c12c0e10cf, type: 3}
+--- !u!114 &2031837397 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2975390440968840079, guid: e2c517e6fc0f3064f9cf10c12c0e10cf, type: 3}
+  m_PrefabInstance: {fileID: 2031837396}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a3c68578a3386b5429f4a3434a7fd561, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2037797039
 GameObject:
   m_ObjectHideFlags: 0

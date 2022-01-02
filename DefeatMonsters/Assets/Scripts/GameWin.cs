@@ -18,7 +18,7 @@ public class GameWin : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        data = SaveSystem.LoadPlayer();
+        
         // Debug.Log(playerData.dame);
         // Debug.Log(playerData.maxHealth);
         // id Items
