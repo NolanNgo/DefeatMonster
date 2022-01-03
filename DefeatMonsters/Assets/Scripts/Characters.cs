@@ -10,6 +10,7 @@ public class Characters : MonoBehaviour
     [SerializeField] RectTransform fader1;
     public Button btnSelect;
     public Button btnBack;
+    public GameObject viewPoint;
     // Start is called before the first frame update
     void Start()
     {
@@ -26,6 +27,7 @@ public class Characters : MonoBehaviour
     {
         btnSelect.gameObject.SetActive(true);
         btnBack.gameObject.SetActive(true);
+        viewPoint.gameObject.SetActive(false);
         Invoke("btnDisappearCha", 0f);
 
         fader1.gameObject.SetActive(true);
@@ -38,6 +40,8 @@ public class Characters : MonoBehaviour
 
     private void loadSelect()
     {
+
+        
         SceneManager.LoadScene("Level1");
     }
 

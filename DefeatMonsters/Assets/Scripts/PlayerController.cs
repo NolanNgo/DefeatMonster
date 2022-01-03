@@ -9,6 +9,8 @@ public class PlayerController : MonoBehaviour
     public float healthPlayer = 5000;
     public float maxHealth = 5000;
     public float dame = 300;
+
+    // public float dameTest;
     public float coins = 0;
     public Image healthBar;
     public Text CoinsText;
@@ -17,13 +19,14 @@ public class PlayerController : MonoBehaviour
     private bool facingRight = true;
     public int playerJumpPower = 1250;
     public GameManager gameManager;
-
     private float moveX;
     private float moveY;
+    private MonsterMove Enemy;
     private Player_Animation_Controller animation_Controller;
     // Start is called before the first frame update
     void Start()
     {
+        // dameTest = GetComponent<MonsterMove>().dame;
         if (SceneManager.GetActiveScene().buildIndex != 3) 
         {
             PlayerData data = SaveSystem.LoadPlayer();
@@ -33,6 +36,7 @@ public class PlayerController : MonoBehaviour
             coins = data.coins;
         }     
         animation_Controller = GetComponent<Player_Animation_Controller>();
+       
     }
 
     // Update is called once per frame
@@ -51,8 +55,26 @@ public class PlayerController : MonoBehaviour
         }
     }
 
+    private void OnCollisionEnter2D(Collision2D other){
+        if(other.gameObject.tag == "Enemy")
+        {
+            animation_Controller.Attack();
+            // dameTest = GameObject.FindGameObjectWithTag("Enemy");
+            Enemy = other.gameObject.GetComponent<MonsterMove>();
+            Enemy.Hit(dame);
+            Hit(Enemy.dame);
+            if(Enemy.healthEnemy <= 0){
+                 Destroy(other.gameObject);
+            }
+            // Debug.Log(Enemy.healthEnemy);
+        }
+    }
     private void OnTriggerEnter2D(Collider2D collision)
     {
+        // if(collision.tag == "Enemy")
+        // {
+        //     Debug.Log("chammmmmmmmm");
+        // }
         if(collision.tag == "WIN")
         {
             SaveSystem.SavePlayer(this);
@@ -76,7 +98,7 @@ public class PlayerController : MonoBehaviour
         }
     }
 
-    public void Hit(int _damage) {
+    public void Hit(float _damage) {
         healthPlayer -= _damage;
     }
 
