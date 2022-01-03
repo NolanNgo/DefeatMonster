@@ -2791,6 +2791,7 @@ MonoBehaviour:
   dame: 300
   healthEnemy: 5000
   data:
+    id: 0
     healthPlayer: 0
     maxHealth: 0
     dame: 0
@@ -4289,9 +4290,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   EnemySpeed: 1
   moveleft: 1
-  dame: 300
-  healthEnemy: 5000
+  dame: 35
+  healthEnemy: 1500
   data:
+    id: 0
     healthPlayer: 0
     maxHealth: 0
     dame: 0
@@ -5831,6 +5833,7 @@ MonoBehaviour:
   dame: 300
   healthEnemy: 5000
   data:
+    id: 0
     healthPlayer: 0
     maxHealth: 0
     dame: 0
@@ -8079,9 +8082,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   EnemySpeed: 1
   moveleft: 1
-  dame: 300
+  dame: 30
   healthEnemy: 1000
   data:
+    id: 0
     healthPlayer: 0
     maxHealth: 0
     dame: 0
@@ -12245,9 +12249,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   EnemySpeed: 1
   moveleft: 1
-  dame: 300
-  healthEnemy: 5000
+  dame: 45
+  healthEnemy: 1000
   data:
+    id: 0
     healthPlayer: 0
     maxHealth: 0
     dame: 0
@@ -18705,6 +18710,7 @@ MonoBehaviour:
   dame: 300
   healthEnemy: 5000
   data:
+    id: 0
     healthPlayer: 0
     maxHealth: 0
     dame: 0
@@ -20632,6 +20638,7 @@ MonoBehaviour:
   dame: 300
   healthEnemy: 5000
   data:
+    id: 0
     healthPlayer: 0
     maxHealth: 0
     dame: 0
@@ -24716,6 +24723,7 @@ MonoBehaviour:
   dame: 300
   healthEnemy: 5000
   data:
+    id: 0
     healthPlayer: 0
     maxHealth: 0
     dame: 0
@@ -25907,6 +25915,7 @@ MonoBehaviour:
   dame: 300
   healthEnemy: 5000
   data:
+    id: 0
     healthPlayer: 0
     maxHealth: 0
     dame: 0

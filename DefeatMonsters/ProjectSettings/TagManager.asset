@@ -3,24 +3,7 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags:
-  - WIN
-  - Event
-  - coins
-  - traps
-  - die
-<<<<<<< HEAD
-  - healthBar
-  - CoinsText
-  - gameManager
-  - Player_1
-  - Player_2
-  - Player_3
-  - Player_4
-  - Player_0
-=======
-  - Enemy
->>>>>>> 80759a0225a6941c1c53a839052f8495da38c8a6
+  tags: []
   layers:
   - Default
   - TransparentFX

@@ -94,7 +94,7 @@ public class PlayerController : MonoBehaviour
     private void OnCollisionEnter2D(Collision2D other){
         if(other.gameObject.tag == "Enemy")
         {
-            animation_Controller.Attack();
+            // animation_Controller.Attack();
             // dameTest = GameObject.FindGameObjectWithTag("Enemy");
             Enemy = other.gameObject.GetComponent<MonsterMove>();
             Enemy.Hit(dame);

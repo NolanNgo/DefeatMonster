@@ -6,8 +6,8 @@ public class MonsterMove : MonoBehaviour
 {
     public float EnemySpeed;
     public bool moveleft = true;
-    public float dame = 30;
-    public float healthEnemy = 1000;
+    public float dame ;
+    public float healthEnemy;
     public PlayerData data;
     // Update is called once per frame
     private void FixedUpdate()
