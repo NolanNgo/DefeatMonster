@@ -6,6 +6,9 @@ public class MonsterMove : MonoBehaviour
 {
     public float EnemySpeed;
     public bool moveleft = true;
+    public float dame = 30;
+    public float healthEnemy = 1000;
+    public PlayerData data;
     // Update is called once per frame
     private void FixedUpdate()
     {
@@ -14,8 +17,26 @@ public class MonsterMove : MonoBehaviour
         else Dichuyen.x += EnemySpeed * Time.deltaTime;
         transform.localPosition = Dichuyen;
     }
+    // private void OnTriggerEnter2D(Collider2D collision)
+    // {
+    //     if(collision.tag == "Player")
+    //     {
+    //         Debug.Log("Chammmmmmmmmmmmmmmmm");
+    //     }
+    // } 
     private void OnCollisionEnter2D(Collision2D collision)
     {
+        // if(collision.gameObject.tag == "Player")
+        // {
+        //     healthEnemy -= data.dame;
+        //     if(healthEnemy<=0)
+        //     {
+        //         Destroy(this);
+        //         Debug.Log("Enemy Destroy");
+        //     }
+        //     // Debug.Log("Dame: "+data.dame.ToString());
+        //     // Debug.Log("Enemy");
+        // }
         if (collision.contacts[0].normal.x > 0)
         {
             Flip();
@@ -30,6 +51,9 @@ public class MonsterMove : MonoBehaviour
         }
         
     }
+    public void Hit(float _damage) {
+        healthEnemy -= _damage;
+    }
     void Flip()
     {
         moveleft = !moveleft;
@@ -37,6 +61,9 @@ public class MonsterMove : MonoBehaviour
         huong.x *= -1;
         transform.localScale = huong;
     }
-
+    void Update()
+    {
+        data = SaveSystem.LoadPlayer();
+    }
 
 }
