@@ -18,9 +18,9 @@ public class PlayerController : MonoBehaviour
     private bool facingRight = true;
     public int playerJumpPower = 1250;
     public GameManager gameManager;
-
     private float moveX;
     private float moveY;
+    private MonsterMove Enemy;
     private Player_Animation_Controller animation_Controller;
 
     GameObject player0;
@@ -91,8 +91,26 @@ public class PlayerController : MonoBehaviour
         }
     }
 
+    private void OnCollisionEnter2D(Collision2D other){
+        if(other.gameObject.tag == "Enemy")
+        {
+            animation_Controller.Attack();
+            // dameTest = GameObject.FindGameObjectWithTag("Enemy");
+            Enemy = other.gameObject.GetComponent<MonsterMove>();
+            Enemy.Hit(dame);
+            Hit(Enemy.dame);
+            if(Enemy.healthEnemy <= 0){
+                 Destroy(other.gameObject);
+            }
+            // Debug.Log(Enemy.healthEnemy);
+        }
+    }
     private void OnTriggerEnter2D(Collider2D collision)
     {
+        // if(collision.tag == "Enemy")
+        // {
+        //     Debug.Log("chammmmmmmmm");
+        // }
         if(collision.tag == "WIN")
         {
             SaveSystem.SavePlayer(this);
@@ -116,7 +134,7 @@ public class PlayerController : MonoBehaviour
         }
     }
 
-    public void Hit(int _damage) {
+    public void Hit(float _damage) {
         healthPlayer -= _damage;
     }
 
