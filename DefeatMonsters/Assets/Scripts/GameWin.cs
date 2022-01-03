@@ -68,7 +68,7 @@ public class GameWin : MonoBehaviour
                 ButtonRef.GetComponent<ItemsShop>().QuantityText.text = shopItems[3, ButtonRef.GetComponent<ItemsShop>().ItemID].ToString();
             }
             // player.healthPlayer = data.healthPlayer;
-            SaveSystem.SavePlayer(player);
+            // SaveSystem.SavePlayer(player);
 
         }
 

@@ -9,6 +9,14 @@ TagManager:
   - coins
   - traps
   - die
+  - healthBar
+  - CoinsText
+  - gameManager
+  - Player_1
+  - Player_2
+  - Player_3
+  - Player_4
+  - Player_0
   layers:
   - Default
   - TransparentFX
