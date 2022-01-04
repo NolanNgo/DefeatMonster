@@ -68,7 +68,7 @@ public class GameWin : MonoBehaviour
         GameObject ButtonRef = GameObject.FindGameObjectWithTag("Event").GetComponent<EventSystem>().currentSelectedGameObject;
         if ( player.coins >=0 && player.coins >= shopItems[2, ButtonRef.GetComponent<ItemsShop>().ItemID] && shopItems[3, ButtonRef.GetComponent<ItemsShop>().ItemID] > 0)
         {
-            if(shopItems[1, ButtonRef.GetComponent<ItemsShop>().ItemID] ==1)
+            if(shopItems[1, ButtonRef.GetComponent<ItemsShop>().ItemID] ==1 && player.healthPlayer < player.maxHealth)
             {
                 player.coins -= shopItems[2, ButtonRef.GetComponent<ItemsShop>().ItemID];
                 shopItems[3, ButtonRef.GetComponent<ItemsShop>().ItemID]--;
