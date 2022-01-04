@@ -23,11 +23,8 @@ public class PlayerController : MonoBehaviour
     private MonsterMove Enemy;
     private Player_Animation_Controller animation_Controller;
 
-    GameObject player0;
-    GameObject player1;
-    GameObject player2;
-    GameObject player3;
-    GameObject player4;
+    int maxJump = 2;
+    int jumps = 0;
     PlayerData data;
     // Start is called before the first frame update
     void Start()
@@ -38,38 +35,8 @@ public class PlayerController : MonoBehaviour
         maxHealth = data.maxHealth;
         dame = data.dame;
         coins = data.coins;
-        Debug.Log(id);
-        animation_Controller = GetComponent<Player_Animation_Controller>();
 
-        if (SceneManager.GetActiveScene().buildIndex > 2) 
-        {
-            if (data.id != 0) 
-            {
-                player0 = GameObject.FindGameObjectWithTag("Player_0");
-                player0.SetActive(false);
-            }
-            if (data.id != 1) 
-            {
-                player1 = GameObject.FindGameObjectWithTag("Player_1");
-                player1.SetActive(false);
-            }
-            if (data.id != 2) 
-            {
-                player2 = GameObject.FindGameObjectWithTag("Player_2");
-                player2.SetActive(false);
-            }
-            if (data.id != 3) 
-            {
-                player3 = GameObject.FindGameObjectWithTag("Player_3");
-                player3.SetActive(false);
-            }
-            if (data.id != 4) 
-            {
-                player4 = GameObject.FindGameObjectWithTag("Player_4");
-                player4.SetActive(false);
-            }
-        }
-        
+        animation_Controller = GetComponent<Player_Animation_Controller>();
     }
 
     // Update is called once per frame
@@ -92,6 +59,7 @@ public class PlayerController : MonoBehaviour
     }
 
     private void OnCollisionEnter2D(Collision2D other){
+        jumps = 0;
         if(other.gameObject.tag == "Enemy")
         {
             // animation_Controller.Attack();
@@ -170,9 +138,10 @@ public class PlayerController : MonoBehaviour
         {
             animation_Controller.Stun();
         }
-        if (Input.GetButtonDown("Jump"))
+        if (Input.GetButtonDown("Jump") && (jumps < maxJump))
         {
             Jump();
+            jumps++;
         }
         if(moveX<0.0f && facingRight == true)
         {

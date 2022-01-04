@@ -14,12 +14,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   character:
   - characterName: Seven
-    characterSprite: {fileID: 21300000, guid: f61a84e138b0c4940a69211bf8e119df, type: 3}
+    characterSprite: {fileID: 21300000, guid: 72d7e1e66f1458147a89c2e8d08dd4be, type: 3}
   - characterName: Corn
-    characterSprite: {fileID: 21300000, guid: f12ea41566e8d884f8a7bda5a56170c0, type: 3}
+    characterSprite: {fileID: 21300000, guid: 88a12201671e91a4f8f1a5f708818a5d, type: 3}
   - characterName: Phoenix
-    characterSprite: {fileID: 21300000, guid: 6af69e8ae64d59347b7c0eba3d64b1c5, type: 3}
+    characterSprite: {fileID: 21300000, guid: 7d558415c91c5884ea5497d834940f1f, type: 3}
   - characterName: Bear
-    characterSprite: {fileID: 21300000, guid: ab39888b15d875a408947dfd8efa2ac9, type: 3}
+    characterSprite: {fileID: 21300000, guid: 2ece7caef6ccd794981ae42ab5e93bd1, type: 3}
   - characterName: YUH
-    characterSprite: {fileID: 21300000, guid: 277423da8c88e904fb2f22a09e34dad7, type: 3}
+    characterSprite: {fileID: 21300000, guid: 5b7a2843a246a6b448be2593afbc042e, type: 3}

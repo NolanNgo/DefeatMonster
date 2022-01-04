@@ -4450,7 +4450,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9171776095103405893, guid: a4221534eaadefa4789903ec8a24d8b6, type: 3}
       propertyPath: m_RootOrder
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 9171776095103405893, guid: a4221534eaadefa4789903ec8a24d8b6, type: 3}
       propertyPath: m_AnchorMax.x
@@ -4526,6 +4526,22 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a4221534eaadefa4789903ec8a24d8b6, type: 3}
+--- !u!114 &204920992 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2283634556079360136, guid: a4221534eaadefa4789903ec8a24d8b6, type: 3}
+  m_PrefabInstance: {fileID: 204920991}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 204920993}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a3c68578a3386b5429f4a3434a7fd561, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!1 &204920993 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 9171776095103405892, guid: a4221534eaadefa4789903ec8a24d8b6, type: 3}
+  m_PrefabInstance: {fileID: 204920991}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &205853142
 GameObject:
   m_ObjectHideFlags: 0
@@ -5006,6 +5022,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   EnemySpeed: 1
   moveleft: 1
+  dame: 0
+  healthEnemy: 0
+  data:
+    id: 0
+    healthPlayer: 0
+    maxHealth: 0
+    dame: 0
+    coins: 0
 --- !u!68 &221022077
 EdgeCollider2D:
   m_ObjectHideFlags: 0
@@ -7899,7 +7923,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3811756662411231710, guid: 9b9135d962be60f47b8bf630f441c488, type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 3811756662411231710, guid: 9b9135d962be60f47b8bf630f441c488, type: 3}
       propertyPath: m_AnchorMax.x
@@ -7999,6 +8023,22 @@ PrefabInstance:
       objectReference: {fileID: 1450814124}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9b9135d962be60f47b8bf630f441c488, type: 3}
+--- !u!114 &437120093 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6061770576994464700, guid: 9b9135d962be60f47b8bf630f441c488, type: 3}
+  m_PrefabInstance: {fileID: 437120092}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 437120094}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a3c68578a3386b5429f4a3434a7fd561, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!1 &437120094 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3811756662411231711, guid: 9b9135d962be60f47b8bf630f441c488, type: 3}
+  m_PrefabInstance: {fileID: 437120092}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &439398794
 GameObject:
   m_ObjectHideFlags: 0
@@ -10493,6 +10533,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   EnemySpeed: 1
   moveleft: 1
+  dame: 0
+  healthEnemy: 0
+  data:
+    id: 0
+    healthPlayer: 0
+    maxHealth: 0
+    dame: 0
+    coins: 0
 --- !u!95 &586597393
 Animator:
   serializedVersion: 3
@@ -13850,6 +13898,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   EnemySpeed: 1
   moveleft: 1
+  dame: 0
+  healthEnemy: 0
+  data:
+    id: 0
+    healthPlayer: 0
+    maxHealth: 0
+    dame: 0
+    coins: 0
 --- !u!1 &888643619
 GameObject:
   m_ObjectHideFlags: 0
@@ -14744,6 +14800,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   EnemySpeed: 1
   moveleft: 1
+  dame: 0
+  healthEnemy: 0
+  data:
+    id: 0
+    healthPlayer: 0
+    maxHealth: 0
+    dame: 0
+    coins: 0
 --- !u!95 &947115161
 Animator:
   serializedVersion: 3
@@ -22366,12 +22430,17 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 2975390440968840079, guid: e2c517e6fc0f3064f9cf10c12c0e10cf, type: 3}
   m_PrefabInstance: {fileID: 1432661558}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
+  m_GameObject: {fileID: 1432661560}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: a3c68578a3386b5429f4a3434a7fd561, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &1432661560 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5310620902982296127, guid: e2c517e6fc0f3064f9cf10c12c0e10cf, type: 3}
+  m_PrefabInstance: {fileID: 1432661558}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1433500582
 GameObject:
   m_ObjectHideFlags: 0
@@ -22622,6 +22691,7 @@ GameObject:
   - component: {fileID: 1450814125}
   - component: {fileID: 1450814124}
   - component: {fileID: 1450814126}
+  - component: {fileID: 1450814127}
   m_Layer: 0
   m_Name: GameController
   m_TagString: Untagged
@@ -22681,7 +22751,28 @@ MonoBehaviour:
     maxHealth: 0
     dame: 0
     coins: 0
-  player: {fileID: 1432661559}
+  player0: {fileID: 1432661559}
+  player1: {fileID: 1832919976}
+  player2: {fileID: 437120093}
+  player3: {fileID: 204920992}
+  player4: {fileID: 1638387684}
+--- !u!114 &1450814127
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1450814123}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0aafde69d6184724fb7387163939d54b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player0: {fileID: 1432661560}
+  player1: {fileID: 1832919977}
+  player2: {fileID: 437120094}
+  player3: {fileID: 204920993}
+  player4: {fileID: 1638387685}
 --- !u!1 &1452162322
 GameObject:
   m_ObjectHideFlags: 0
@@ -25258,6 +25349,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   EnemySpeed: 1
   moveleft: 1
+  dame: 0
+  healthEnemy: 0
+  data:
+    id: 0
+    healthPlayer: 0
+    maxHealth: 0
+    dame: 0
+    coins: 0
 --- !u!95 &1566258084
 Animator:
   serializedVersion: 3
@@ -26106,6 +26205,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   EnemySpeed: 1
   moveleft: 1
+  dame: 0
+  healthEnemy: 0
+  data:
+    id: 0
+    healthPlayer: 0
+    maxHealth: 0
+    dame: 0
+    coins: 0
 --- !u!95 &1602956477
 Animator:
   serializedVersion: 3
@@ -26795,7 +26902,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5531388198352232729, guid: c91c6e15f69f15d4783ab2ef5f13c925, type: 3}
       propertyPath: m_RootOrder
-      value: 3
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 5531388198352232729, guid: c91c6e15f69f15d4783ab2ef5f13c925, type: 3}
       propertyPath: m_AnchorMax.x
@@ -26871,6 +26978,22 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c91c6e15f69f15d4783ab2ef5f13c925, type: 3}
+--- !u!114 &1638387684 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3187097209996334345, guid: c91c6e15f69f15d4783ab2ef5f13c925, type: 3}
+  m_PrefabInstance: {fileID: 1638387683}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1638387685}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a3c68578a3386b5429f4a3434a7fd561, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!1 &1638387685 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5531388198352232728, guid: c91c6e15f69f15d4783ab2ef5f13c925, type: 3}
+  m_PrefabInstance: {fileID: 1638387683}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1651479063
 GameObject:
   m_ObjectHideFlags: 0
@@ -28877,6 +29000,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   EnemySpeed: 1
   moveleft: 1
+  dame: 0
+  healthEnemy: 0
+  data:
+    id: 0
+    healthPlayer: 0
+    maxHealth: 0
+    dame: 0
+    coins: 0
 --- !u!68 &1753923261
 EdgeCollider2D:
   m_ObjectHideFlags: 0
@@ -30353,7 +30484,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3774837524126267455, guid: deeb1c29dc7fdd14a8a59a1334dc5861, type: 3}
       propertyPath: m_RootOrder
-      value: 4
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3774837524126267455, guid: deeb1c29dc7fdd14a8a59a1334dc5861, type: 3}
       propertyPath: m_AnchorMax.x
@@ -30441,6 +30572,22 @@ PrefabInstance:
       objectReference: {fileID: 1450814124}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: deeb1c29dc7fdd14a8a59a1334dc5861, type: 3}
+--- !u!114 &1832919976 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6096540180862486264, guid: deeb1c29dc7fdd14a8a59a1334dc5861, type: 3}
+  m_PrefabInstance: {fileID: 1832919975}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1832919977}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a3c68578a3386b5429f4a3434a7fd561, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!1 &1832919977 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3774837524126267454, guid: deeb1c29dc7fdd14a8a59a1334dc5861, type: 3}
+  m_PrefabInstance: {fileID: 1832919975}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1834129694
 GameObject:
   m_ObjectHideFlags: 0
@@ -30918,6 +31065,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   EnemySpeed: 1
   moveleft: 1
+  dame: 0
+  healthEnemy: 0
+  data:
+    id: 0
+    healthPlayer: 0
+    maxHealth: 0
+    dame: 0
+    coins: 0
 --- !u!68 &1855861350
 EdgeCollider2D:
   m_ObjectHideFlags: 0
