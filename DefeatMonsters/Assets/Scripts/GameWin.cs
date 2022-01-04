@@ -87,6 +87,13 @@ public class GameWin : MonoBehaviour
                 // CoinsText.text = "Coins: " + coin.ToString();
                 ButtonRef.GetComponent<ItemsShop>().QuantityText.text = shopItems[3, ButtonRef.GetComponent<ItemsShop>().ItemID].ToString();
             }
+            if(shopItems[1, ButtonRef.GetComponent<ItemsShop>().ItemID] ==3){
+                player.coins -= shopItems[2, ButtonRef.GetComponent<ItemsShop>().ItemID];
+                shopItems[3, ButtonRef.GetComponent<ItemsShop>().ItemID]--;
+                player.maxHealth += 1000;
+                // CoinsText.text = "Coins: " + coin.ToString();
+                ButtonRef.GetComponent<ItemsShop>().QuantityText.text = shopItems[3, ButtonRef.GetComponent<ItemsShop>().ItemID].ToString();
+            }
             if(shopItems[1, ButtonRef.GetComponent<ItemsShop>().ItemID] ==4){
                 player.coins -= shopItems[2, ButtonRef.GetComponent<ItemsShop>().ItemID];
                 shopItems[3, ButtonRef.GetComponent<ItemsShop>().ItemID]--;
