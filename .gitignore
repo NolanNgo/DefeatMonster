@@ -2,14 +2,13 @@
 #
 # Get latest from https://github.com/github/gitignore/blob/master/Unity.gitignore
 #
-DefeatMonster/[Ll]ibrary/
+DefeatMonsters/[Ll]ibrary/
 DefeatMonsters/Temp/
-DefeatMonster/[Oo]bj/
-DefeatMonster/[Bb]uild/
-DefeatMonster/[Bb]uilds/
-DefeatMonster/Logs/
-DefeatMonster/[Mm]emoryCaptures/
-
+DefeatMonsters/[Oo]bj/
+DefeatMonsters/[Bb]uild/
+DefeatMonsters/[Bb]uilds/
+DefeatMonsters/[Ll]ogs/
+DefeatMonsters/[Mm]emoryCaptures/
 # Asset meta data should only be ignored when the corresponding asset is also ignored
 !DefeatMonster/[Aa]ssets/**/*.meta
 
