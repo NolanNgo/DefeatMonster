@@ -66,13 +66,17 @@ public class GameWin : MonoBehaviour
                 break;
         }
         GameObject ButtonRef = GameObject.FindGameObjectWithTag("Event").GetComponent<EventSystem>().currentSelectedGameObject;
-        if (coin >= shopItems[2, ButtonRef.GetComponent<ItemsShop>().ItemID] && shopItems[3, ButtonRef.GetComponent<ItemsShop>().ItemID] > 0)
+        if ( player.coins >=0 && player.coins >= shopItems[2, ButtonRef.GetComponent<ItemsShop>().ItemID] && shopItems[3, ButtonRef.GetComponent<ItemsShop>().ItemID] > 0)
         {
             if(shopItems[1, ButtonRef.GetComponent<ItemsShop>().ItemID] ==1)
             {
                 player.coins -= shopItems[2, ButtonRef.GetComponent<ItemsShop>().ItemID];
                 shopItems[3, ButtonRef.GetComponent<ItemsShop>().ItemID]--;
                 player.healthPlayer = data.healthPlayer += 1000;
+                if(player.healthPlayer >= player.maxHealth)
+                {
+                    player.healthPlayer = player.maxHealth;
+                }
                 // CoinsText.text = "Coins: " + coin.ToString();
                 ButtonRef.GetComponent<ItemsShop>().QuantityText.text = shopItems[3, ButtonRef.GetComponent<ItemsShop>().ItemID].ToString();        
             }
@@ -80,6 +84,13 @@ public class GameWin : MonoBehaviour
                 player.coins -= shopItems[2, ButtonRef.GetComponent<ItemsShop>().ItemID];
                 shopItems[3, ButtonRef.GetComponent<ItemsShop>().ItemID]--;
                 player.dame = data.dame*2;
+                // CoinsText.text = "Coins: " + coin.ToString();
+                ButtonRef.GetComponent<ItemsShop>().QuantityText.text = shopItems[3, ButtonRef.GetComponent<ItemsShop>().ItemID].ToString();
+            }
+            if(shopItems[1, ButtonRef.GetComponent<ItemsShop>().ItemID] ==3){
+                player.coins -= shopItems[2, ButtonRef.GetComponent<ItemsShop>().ItemID];
+                shopItems[3, ButtonRef.GetComponent<ItemsShop>().ItemID]--;
+                player.maxHealth += 1000;
                 // CoinsText.text = "Coins: " + coin.ToString();
                 ButtonRef.GetComponent<ItemsShop>().QuantityText.text = shopItems[3, ButtonRef.GetComponent<ItemsShop>().ItemID].ToString();
             }
