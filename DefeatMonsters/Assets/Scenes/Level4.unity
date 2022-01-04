@@ -1461,6 +1461,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   EnemySpeed: 1
   moveleft: 1
+  dame: 0
+  healthEnemy: 0
+  data:
+    id: 0
+    healthPlayer: 0
+    maxHealth: 0
+    dame: 0
+    coins: 0
 --- !u!50 &112568549
 Rigidbody2D:
   serializedVersion: 4
@@ -4647,6 +4655,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   EnemySpeed: 1
   moveleft: 1
+  dame: 0
+  healthEnemy: 0
+  data:
+    id: 0
+    healthPlayer: 0
+    maxHealth: 0
+    dame: 0
+    coins: 0
 --- !u!1 &269150408
 GameObject:
   m_ObjectHideFlags: 0
@@ -11570,6 +11586,7 @@ GameObject:
   - component: {fileID: 648456434}
   - component: {fileID: 648456433}
   - component: {fileID: 648456435}
+  - component: {fileID: 648456436}
   m_Layer: 0
   m_Name: GameController
   m_TagString: Untagged
@@ -11629,7 +11646,28 @@ MonoBehaviour:
     maxHealth: 0
     dame: 0
     coins: 0
-  player: {fileID: 1589940480}
+  player0: {fileID: 1589940480}
+  player1: {fileID: 829290371}
+  player2: {fileID: 662792189}
+  player3: {fileID: 1457020670}
+  player4: {fileID: 1677202072}
+--- !u!114 &648456436
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 648456432}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0aafde69d6184724fb7387163939d54b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player0: {fileID: 1589940481}
+  player1: {fileID: 829290372}
+  player2: {fileID: 662792190}
+  player3: {fileID: 1457020671}
+  player4: {fileID: 1677202073}
 --- !u!1 &650296436
 GameObject:
   m_ObjectHideFlags: 0
@@ -11805,7 +11843,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3811756662411231710, guid: 9b9135d962be60f47b8bf630f441c488, type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 3811756662411231710, guid: 9b9135d962be60f47b8bf630f441c488, type: 3}
       propertyPath: m_AnchorMax.x
@@ -11905,6 +11943,22 @@ PrefabInstance:
       objectReference: {fileID: 648456433}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9b9135d962be60f47b8bf630f441c488, type: 3}
+--- !u!114 &662792189 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6061770576994464700, guid: 9b9135d962be60f47b8bf630f441c488, type: 3}
+  m_PrefabInstance: {fileID: 662792188}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 662792190}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a3c68578a3386b5429f4a3434a7fd561, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!1 &662792190 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3811756662411231711, guid: 9b9135d962be60f47b8bf630f441c488, type: 3}
+  m_PrefabInstance: {fileID: 662792188}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &669002437
 GameObject:
   m_ObjectHideFlags: 0
@@ -15031,7 +15085,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3774837524126267455, guid: deeb1c29dc7fdd14a8a59a1334dc5861, type: 3}
       propertyPath: m_RootOrder
-      value: 4
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3774837524126267455, guid: deeb1c29dc7fdd14a8a59a1334dc5861, type: 3}
       propertyPath: m_AnchorMax.x
@@ -15119,6 +15173,22 @@ PrefabInstance:
       objectReference: {fileID: 648456433}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: deeb1c29dc7fdd14a8a59a1334dc5861, type: 3}
+--- !u!114 &829290371 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6096540180862486264, guid: deeb1c29dc7fdd14a8a59a1334dc5861, type: 3}
+  m_PrefabInstance: {fileID: 829290370}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 829290372}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a3c68578a3386b5429f4a3434a7fd561, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!1 &829290372 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3774837524126267454, guid: deeb1c29dc7fdd14a8a59a1334dc5861, type: 3}
+  m_PrefabInstance: {fileID: 829290370}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &831936031
 GameObject:
   m_ObjectHideFlags: 0
@@ -18035,6 +18105,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   EnemySpeed: 1
   moveleft: 1
+  dame: 0
+  healthEnemy: 0
+  data:
+    id: 0
+    healthPlayer: 0
+    maxHealth: 0
+    dame: 0
+    coins: 0
 --- !u!50 &954526600
 Rigidbody2D:
   serializedVersion: 4
@@ -28898,7 +28976,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9171776095103405893, guid: a4221534eaadefa4789903ec8a24d8b6, type: 3}
       propertyPath: m_RootOrder
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 9171776095103405893, guid: a4221534eaadefa4789903ec8a24d8b6, type: 3}
       propertyPath: m_AnchorMax.x
@@ -28974,6 +29052,22 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a4221534eaadefa4789903ec8a24d8b6, type: 3}
+--- !u!114 &1457020670 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2283634556079360136, guid: a4221534eaadefa4789903ec8a24d8b6, type: 3}
+  m_PrefabInstance: {fileID: 1457020669}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1457020671}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a3c68578a3386b5429f4a3434a7fd561, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!1 &1457020671 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 9171776095103405892, guid: a4221534eaadefa4789903ec8a24d8b6, type: 3}
+  m_PrefabInstance: {fileID: 1457020669}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1459106197
 GameObject:
   m_ObjectHideFlags: 0
@@ -31611,12 +31705,17 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 2975390440968840079, guid: e2c517e6fc0f3064f9cf10c12c0e10cf, type: 3}
   m_PrefabInstance: {fileID: 1589940479}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
+  m_GameObject: {fileID: 1589940481}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: a3c68578a3386b5429f4a3434a7fd561, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &1589940481 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5310620902982296127, guid: e2c517e6fc0f3064f9cf10c12c0e10cf, type: 3}
+  m_PrefabInstance: {fileID: 1589940479}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1590243068
 GameObject:
   m_ObjectHideFlags: 0
@@ -32043,6 +32142,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   EnemySpeed: 1
   moveleft: 1
+  dame: 0
+  healthEnemy: 0
+  data:
+    id: 0
+    healthPlayer: 0
+    maxHealth: 0
+    dame: 0
+    coins: 0
 --- !u!50 &1607073919
 Rigidbody2D:
   serializedVersion: 4
@@ -33688,7 +33795,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5531388198352232729, guid: c91c6e15f69f15d4783ab2ef5f13c925, type: 3}
       propertyPath: m_RootOrder
-      value: 3
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 5531388198352232729, guid: c91c6e15f69f15d4783ab2ef5f13c925, type: 3}
       propertyPath: m_AnchorMax.x
@@ -33764,6 +33871,22 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c91c6e15f69f15d4783ab2ef5f13c925, type: 3}
+--- !u!114 &1677202072 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3187097209996334345, guid: c91c6e15f69f15d4783ab2ef5f13c925, type: 3}
+  m_PrefabInstance: {fileID: 1677202071}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1677202073}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a3c68578a3386b5429f4a3434a7fd561, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!1 &1677202073 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5531388198352232728, guid: c91c6e15f69f15d4783ab2ef5f13c925, type: 3}
+  m_PrefabInstance: {fileID: 1677202071}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1680328650
 GameObject:
   m_ObjectHideFlags: 0
@@ -36195,6 +36318,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   EnemySpeed: 1
   moveleft: 1
+  dame: 0
+  healthEnemy: 0
+  data:
+    id: 0
+    healthPlayer: 0
+    maxHealth: 0
+    dame: 0
+    coins: 0
 --- !u!50 &1781260893
 Rigidbody2D:
   serializedVersion: 4
@@ -36629,6 +36760,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   EnemySpeed: 1
   moveleft: 1
+  dame: 0
+  healthEnemy: 0
+  data:
+    id: 0
+    healthPlayer: 0
+    maxHealth: 0
+    dame: 0
+    coins: 0
 --- !u!50 &1791370729
 Rigidbody2D:
   serializedVersion: 4

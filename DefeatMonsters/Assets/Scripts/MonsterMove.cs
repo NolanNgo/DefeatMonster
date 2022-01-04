@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class MonsterMove : MonoBehaviour
 {
@@ -8,6 +9,8 @@ public class MonsterMove : MonoBehaviour
     public bool moveleft = true;
     public float dame ;
     public float healthEnemy;
+    public float maxHealthEnemy;
+    public Image healthBar;
     public PlayerData data;
     // Update is called once per frame
     private void FixedUpdate()
@@ -53,6 +56,7 @@ public class MonsterMove : MonoBehaviour
     }
     public void Hit(float _damage) {
         healthEnemy -= _damage;
+        healthBar.fillAmount = healthEnemy / maxHealthEnemy;
     }
     void Flip()
     {

@@ -1762,6 +1762,22 @@ PrefabInstance:
       objectReference: {fileID: 1141903131}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: deeb1c29dc7fdd14a8a59a1334dc5861, type: 3}
+--- !u!114 &117539668 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6096540180862486264, guid: deeb1c29dc7fdd14a8a59a1334dc5861, type: 3}
+  m_PrefabInstance: {fileID: 117539667}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 117539669}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a3c68578a3386b5429f4a3434a7fd561, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!1 &117539669 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3774837524126267454, guid: deeb1c29dc7fdd14a8a59a1334dc5861, type: 3}
+  m_PrefabInstance: {fileID: 117539667}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &121045690
 GameObject:
   m_ObjectHideFlags: 0
@@ -2790,6 +2806,8 @@ MonoBehaviour:
   moveleft: 1
   dame: 300
   healthEnemy: 5000
+  maxHealthEnemy: 0
+  healthBar: {fileID: 0}
   data:
     id: 0
     healthPlayer: 0
@@ -4292,6 +4310,8 @@ MonoBehaviour:
   moveleft: 1
   dame: 35
   healthEnemy: 1500
+  maxHealthEnemy: 1500
+  healthBar: {fileID: 1454314952}
   data:
     id: 0
     healthPlayer: 0
@@ -5832,6 +5852,8 @@ MonoBehaviour:
   moveleft: 1
   dame: 300
   healthEnemy: 5000
+  maxHealthEnemy: 0
+  healthBar: {fileID: 0}
   data:
     id: 0
     healthPlayer: 0
@@ -8084,6 +8106,8 @@ MonoBehaviour:
   moveleft: 1
   dame: 30
   healthEnemy: 1000
+  maxHealthEnemy: 1000
+  healthBar: {fileID: 1820980182}
   data:
     id: 0
     healthPlayer: 0
@@ -12251,6 +12275,8 @@ MonoBehaviour:
   moveleft: 1
   dame: 45
   healthEnemy: 1000
+  maxHealthEnemy: 1000
+  healthBar: {fileID: 897635114}
   data:
     id: 0
     healthPlayer: 0
@@ -13161,6 +13187,22 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c91c6e15f69f15d4783ab2ef5f13c925, type: 3}
+--- !u!114 &885263761 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3187097209996334345, guid: c91c6e15f69f15d4783ab2ef5f13c925, type: 3}
+  m_PrefabInstance: {fileID: 885263760}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 885263762}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a3c68578a3386b5429f4a3434a7fd561, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!1 &885263762 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5531388198352232728, guid: c91c6e15f69f15d4783ab2ef5f13c925, type: 3}
+  m_PrefabInstance: {fileID: 885263760}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &893555468
 GameObject:
   m_ObjectHideFlags: 0
@@ -16660,6 +16702,22 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a4221534eaadefa4789903ec8a24d8b6, type: 3}
+--- !u!114 &1124229167 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2283634556079360136, guid: a4221534eaadefa4789903ec8a24d8b6, type: 3}
+  m_PrefabInstance: {fileID: 1124229166}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1124229168}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a3c68578a3386b5429f4a3434a7fd561, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!1 &1124229168 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 9171776095103405892, guid: a4221534eaadefa4789903ec8a24d8b6, type: 3}
+  m_PrefabInstance: {fileID: 1124229166}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1134517339
 GameObject:
   m_ObjectHideFlags: 0
@@ -16876,6 +16934,7 @@ GameObject:
   - component: {fileID: 1141903132}
   - component: {fileID: 1141903131}
   - component: {fileID: 1141903133}
+  - component: {fileID: 1141903134}
   m_Layer: 0
   m_Name: GameController
   m_TagString: Untagged
@@ -16935,7 +16994,28 @@ MonoBehaviour:
     maxHealth: 0
     dame: 0
     coins: 0
-  player: {fileID: 429769107}
+  player0: {fileID: 429769107}
+  player1: {fileID: 117539668}
+  player2: {fileID: 1496126233}
+  player3: {fileID: 1124229167}
+  player4: {fileID: 885263761}
+--- !u!114 &1141903134
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1141903130}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0aafde69d6184724fb7387163939d54b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player0: {fileID: 429769106}
+  player1: {fileID: 117539669}
+  player2: {fileID: 1496126234}
+  player3: {fileID: 1124229168}
+  player4: {fileID: 885263762}
 --- !u!1 &1145602436
 GameObject:
   m_ObjectHideFlags: 0
@@ -18709,6 +18789,8 @@ MonoBehaviour:
   moveleft: 1
   dame: 300
   healthEnemy: 5000
+  maxHealthEnemy: 0
+  healthBar: {fileID: 0}
   data:
     id: 0
     healthPlayer: 0
@@ -20637,6 +20719,8 @@ MonoBehaviour:
   moveleft: 1
   dame: 300
   healthEnemy: 5000
+  maxHealthEnemy: 0
+  healthBar: {fileID: 0}
   data:
     id: 0
     healthPlayer: 0
@@ -22543,6 +22627,22 @@ PrefabInstance:
       objectReference: {fileID: 1141903131}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9b9135d962be60f47b8bf630f441c488, type: 3}
+--- !u!114 &1496126233 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6061770576994464700, guid: 9b9135d962be60f47b8bf630f441c488, type: 3}
+  m_PrefabInstance: {fileID: 1496126232}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1496126234}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a3c68578a3386b5429f4a3434a7fd561, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!1 &1496126234 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3811756662411231711, guid: 9b9135d962be60f47b8bf630f441c488, type: 3}
+  m_PrefabInstance: {fileID: 1496126232}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1498063145
 GameObject:
   m_ObjectHideFlags: 0
@@ -24722,6 +24822,8 @@ MonoBehaviour:
   moveleft: 1
   dame: 300
   healthEnemy: 5000
+  maxHealthEnemy: 0
+  healthBar: {fileID: 0}
   data:
     id: 0
     healthPlayer: 0
@@ -25914,6 +26016,8 @@ MonoBehaviour:
   moveleft: 1
   dame: 300
   healthEnemy: 5000
+  maxHealthEnemy: 0
+  healthBar: {fileID: 0}
   data:
     id: 0
     healthPlayer: 0

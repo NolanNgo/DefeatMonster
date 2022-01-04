@@ -14,7 +14,12 @@ public class GameWin : MonoBehaviour
     public float dame;
     public float coins;
     public PlayerData data;
-    public PlayerController player;
+    public PlayerController player0;
+    public PlayerController player1;
+    public PlayerController player2;
+    public PlayerController player3;
+    public PlayerController player4;
+    PlayerController player;
     // Start is called before the first frame update
     void Start()
     {
@@ -42,6 +47,24 @@ public class GameWin : MonoBehaviour
 
     public void Buy()
     {
+        switch(data.id)
+        {
+            case 0:
+                player = player0;
+                break;
+            case 1:
+                player = player1;
+                break;
+            case 2:
+                player = player2;
+                break;
+            case 3:
+                player = player3;
+                break;
+            case 4:
+                player = player4;
+                break;
+        }
         GameObject ButtonRef = GameObject.FindGameObjectWithTag("Event").GetComponent<EventSystem>().currentSelectedGameObject;
         if (coin >= shopItems[2, ButtonRef.GetComponent<ItemsShop>().ItemID] && shopItems[3, ButtonRef.GetComponent<ItemsShop>().ItemID] > 0)
         {
@@ -68,7 +91,7 @@ public class GameWin : MonoBehaviour
                 ButtonRef.GetComponent<ItemsShop>().QuantityText.text = shopItems[3, ButtonRef.GetComponent<ItemsShop>().ItemID].ToString();
             }
             // player.healthPlayer = data.healthPlayer;
-            // SaveSystem.SavePlayer(player);
+            SaveSystem.SavePlayer(player);
 
         }
 
