@@ -23,12 +23,30 @@ public class PlayerController : MonoBehaviour
     private MonsterMove Enemy;
     private Player_Animation_Controller animation_Controller;
 
+    public AudioSource jumpsound;
+    public AudioSource diesound;
+    public AudioSource coinsound;
+    public AudioSource hitsound;
+    public AudioSource winsound;
+    public AudioSource losesound;
+    public AudioSource musicbg;
+
     int maxJump = 2;
     int jumps = 0;
     PlayerData data;
     // Start is called before the first frame update
     void Start()
     {
+        if (SceneManager.GetActiveScene().buildIndex > 2) 
+        {
+            jumpsound.Stop();
+            diesound.Stop();
+            coinsound.Stop();
+            hitsound.Stop();
+            winsound.Stop();
+            losesound.Stop();
+        }
+
         data = SaveSystem.LoadPlayer();
         id = data.id;
         healthPlayer = data.healthPlayer;
@@ -44,7 +62,6 @@ public class PlayerController : MonoBehaviour
     {
         if (SceneManager.GetActiveScene().buildIndex > 2) 
         {
-            
             CoinsText.text = "COIN: " + coins.ToString();
             healthBar.fillAmount = healthPlayer / maxHealth;
             if (!chkDie)
@@ -62,11 +79,12 @@ public class PlayerController : MonoBehaviour
         jumps = 0;
         if(other.gameObject.tag == "Enemy")
         {
-            // animation_Controller.Attack();
+            animation_Controller.Attack();
             // dameTest = GameObject.FindGameObjectWithTag("Enemy");
             Enemy = other.gameObject.GetComponent<MonsterMove>();
             Enemy.Hit(dame);
             Hit(Enemy.dame);
+            hitsound.Play();
             if(Enemy.healthEnemy <= 0){
                  Destroy(other.gameObject);
             }
@@ -81,19 +99,26 @@ public class PlayerController : MonoBehaviour
         // }
         if(collision.tag == "WIN")
         {
-            SaveSystem.SavePlayer(this);
-            gameManager.GameWin();
+            StartCoroutine(Win());
         }
 
         if(collision.tag == "coins")
         {
+            coinsound.Play();
             coins += 5;
             Destroy(collision.gameObject);
         }
 
         if(collision.tag == "traps")
         {
-            Hit(1000);
+            if (healthPlayer > 0)
+            {
+                hitsound.Play();
+                animation_Controller.Stun();
+                GetComponent<Rigidbody2D>().AddForce(Vector2.up * 1000);
+                Hit(1000);
+            }
+            
         }
 
         if(collision.tag == "die")
@@ -106,10 +131,23 @@ public class PlayerController : MonoBehaviour
         healthPlayer -= _damage;
     }
 
+    IEnumerator Win()
+    {
+        musicbg.Stop();
+        winsound.Play();
+        SaveSystem.SavePlayer(this);
+        yield return new WaitForSeconds(2);
+        gameManager.GameWin();
+    }   
+
     IEnumerator Die()
     {
+        musicbg.Stop();
         chkDie = true;
+        diesound.Play();
         animation_Controller.Death();
+        yield return new WaitForSeconds(2);
+        losesound.Play();
         yield return new WaitForSeconds(1);
         gameManager.GameOver();
     }
@@ -140,6 +178,7 @@ public class PlayerController : MonoBehaviour
         }
         if (Input.GetButtonDown("Jump") && (jumps < maxJump))
         {
+            jumpsound.Play();
             Jump();
             jumps++;
         }
