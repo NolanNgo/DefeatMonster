@@ -5016,7 +5016,7 @@ GameObject:
   - component: {fileID: 221022076}
   m_Layer: 0
   m_Name: snail3
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5050,10 +5050,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   EnemySpeed: 1
   moveleft: 1
-  dame: 0
-  healthEnemy: 0
-  maxHealthEnemy: 0
-  healthBar: {fileID: 0}
+  dame: 200
+  healthEnemy: 1200
+  maxHealthEnemy: 1200
+  healthBar: {fileID: 1739807009}
   data:
     id: 0
     healthPlayer: 0
@@ -10521,7 +10521,7 @@ GameObject:
   - component: {fileID: 586597390}
   m_Layer: 0
   m_Name: ghost3
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10603,10 +10603,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   EnemySpeed: 1
   moveleft: 1
-  dame: 0
-  healthEnemy: 0
-  maxHealthEnemy: 0
-  healthBar: {fileID: 0}
+  dame: 200
+  healthEnemy: 1500
+  maxHealthEnemy: 1500
+  healthBar: {fileID: 987270058}
   data:
     id: 0
     healthPlayer: 0
@@ -11241,6 +11241,7 @@ GameObject:
   - component: {fileID: 633063953}
   - component: {fileID: 633063952}
   - component: {fileID: 633063951}
+  - component: {fileID: 633063955}
   m_Layer: 0
   m_Name: END
   m_TagString: WIN
@@ -11372,6 +11373,32 @@ Transform:
   m_Father: {fileID: 1901097236}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!61 &633063955
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 633063950}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.06840372, y: -0.09046209}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.64, y: 0.64}
+    newSize: {x: 0.64, y: 0.64}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.025373086, y: 0.4590758}
+  m_EdgeRadius: 0
 --- !u!1 &634552546
 GameObject:
   m_ObjectHideFlags: 0
@@ -13847,7 +13874,7 @@ GameObject:
   - component: {fileID: 882942845}
   m_Layer: 0
   m_Name: snail1
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -14006,10 +14033,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   EnemySpeed: 1
   moveleft: 1
-  dame: 0
-  healthEnemy: 0
-  maxHealthEnemy: 0
-  healthBar: {fileID: 0}
+  dame: 200
+  healthEnemy: 1000
+  maxHealthEnemy: 1000
+  healthBar: {fileID: 1433500584}
   data:
     id: 0
     healthPlayer: 0
@@ -14828,7 +14855,7 @@ GameObject:
   - component: {fileID: 947115158}
   m_Layer: 0
   m_Name: ghost4
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -14910,10 +14937,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   EnemySpeed: 1
   moveleft: 1
-  dame: 0
-  healthEnemy: 0
-  maxHealthEnemy: 0
-  healthBar: {fileID: 0}
+  dame: 200
+  healthEnemy: 1500
+  maxHealthEnemy: 1500
+  healthBar: {fileID: 39279063}
   data:
     id: 0
     healthPlayer: 0
@@ -25938,7 +25965,7 @@ GameObject:
   - component: {fileID: 1566258081}
   m_Layer: 0
   m_Name: ghost2
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -26020,10 +26047,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   EnemySpeed: 1
   moveleft: 1
-  dame: 0
-  healthEnemy: 0
-  maxHealthEnemy: 0
-  healthBar: {fileID: 0}
+  dame: 200
+  healthEnemy: 1200
+  maxHealthEnemy: 1200
+  healthBar: {fileID: 107115524}
   data:
     id: 0
     healthPlayer: 0
@@ -26796,7 +26823,7 @@ GameObject:
   - component: {fileID: 1602956474}
   m_Layer: 0
   m_Name: ghost5
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -26878,10 +26905,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   EnemySpeed: 1
   moveleft: 1
-  dame: 0
-  healthEnemy: 0
-  maxHealthEnemy: 0
-  healthBar: {fileID: 0}
+  dame: 250
+  healthEnemy: 1500
+  maxHealthEnemy: 1500
+  healthBar: {fileID: 1254120923}
   data:
     id: 0
     healthPlayer: 0
@@ -29611,7 +29638,7 @@ GameObject:
   - component: {fileID: 1753923261}
   m_Layer: 0
   m_Name: ghost1
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -29715,10 +29742,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   EnemySpeed: 1
   moveleft: 1
-  dame: 0
-  healthEnemy: 0
-  maxHealthEnemy: 0
-  healthBar: {fileID: 0}
+  dame: 200
+  healthEnemy: 1200
+  maxHealthEnemy: 1200
+  healthBar: {fileID: 182810282}
   data:
     id: 0
     healthPlayer: 0
@@ -32169,7 +32196,7 @@ GameObject:
   - component: {fileID: 1855861349}
   m_Layer: 0
   m_Name: snail2
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -32203,10 +32230,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   EnemySpeed: 1
   moveleft: 1
-  dame: 0
-  healthEnemy: 0
-  maxHealthEnemy: 0
-  healthBar: {fileID: 0}
+  dame: 200
+  healthEnemy: 1000
+  maxHealthEnemy: 1000
+  healthBar: {fileID: 1054719917}
   data:
     id: 0
     healthPlayer: 0

@@ -1554,7 +1554,7 @@ GameObject:
   - component: {fileID: 112568548}
   m_Layer: 0
   m_Name: slime2
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1588,10 +1588,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   EnemySpeed: 1
   moveleft: 1
-  dame: 0
-  healthEnemy: 0
-  maxHealthEnemy: 0
-  healthBar: {fileID: 0}
+  dame: 300
+  healthEnemy: 2000
+  maxHealthEnemy: 2000
+  healthBar: {fileID: 1237510334}
   data:
     id: 0
     healthPlayer: 0
@@ -4920,7 +4920,7 @@ GameObject:
   - component: {fileID: 266241996}
   m_Layer: 0
   m_Name: slime1
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5074,10 +5074,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   EnemySpeed: 1
   moveleft: 1
-  dame: 0
-  healthEnemy: 0
-  maxHealthEnemy: 0
-  healthBar: {fileID: 0}
+  dame: 300
+  healthEnemy: 2000
+  maxHealthEnemy: 2000
+  healthBar: {fileID: 2059055513}
   data:
     id: 0
     healthPlayer: 0
@@ -10386,9 +10386,11 @@ GameObject:
   - component: {fileID: 580388133}
   - component: {fileID: 580388135}
   - component: {fileID: 580388134}
+  - component: {fileID: 580388136}
+  - component: {fileID: 580388137}
   m_Layer: 0
   m_Name: bat3
-  m_TagString: Untagged
+  m_TagString: EnemyFreeze
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10478,6 +10480,54 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &580388136
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 580388132}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 91b82c5abaf90c2468af556605dd2ad2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dame: 280
+  healthEnemy: 1900
+  maxHealthEnemy: 1900
+  healthBar: {fileID: 384524450}
+  data:
+    id: 0
+    healthPlayer: 0
+    maxHealth: 0
+    dame: 0
+    coins: 0
+--- !u!61 &580388137
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 580388132}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.0029499903, y: 0.026550889}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.46, y: 0.3}
+    newSize: {x: 0.46, y: 0.3}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.17089154, y: 0.24689823}
+  m_EdgeRadius: 0
 --- !u!1 &580817067
 GameObject:
   m_ObjectHideFlags: 0
@@ -15141,9 +15191,10 @@ GameObject:
   - component: {fileID: 798894458}
   - component: {fileID: 798894457}
   - component: {fileID: 798894459}
+  - component: {fileID: 798894460}
   m_Layer: 0
   m_Name: bee3
-  m_TagString: Untagged
+  m_TagString: EnemyFreeze
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -15259,6 +15310,28 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.36, y: 0.34}
   m_EdgeRadius: 0
+--- !u!114 &798894460
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 798894455}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 91b82c5abaf90c2468af556605dd2ad2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dame: 250
+  healthEnemy: 1500
+  maxHealthEnemy: 1500
+  healthBar: {fileID: 1446744037}
+  data:
+    id: 0
+    healthPlayer: 0
+    maxHealth: 0
+    dame: 0
+    coins: 0
 --- !u!1 &800970762
 GameObject:
   m_ObjectHideFlags: 0
@@ -15353,9 +15426,10 @@ GameObject:
   - component: {fileID: 801554381}
   - component: {fileID: 801554380}
   - component: {fileID: 801554382}
+  - component: {fileID: 801554383}
   m_Layer: 0
   m_Name: bee2
-  m_TagString: Untagged
+  m_TagString: EnemyFreeze
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -15471,6 +15545,28 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.36, y: 0.34}
   m_EdgeRadius: 0
+--- !u!114 &801554383
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 801554378}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 91b82c5abaf90c2468af556605dd2ad2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dame: 250
+  healthEnemy: 1500
+  maxHealthEnemy: 1500
+  healthBar: {fileID: 155607842}
+  data:
+    id: 0
+    healthPlayer: 0
+    maxHealth: 0
+    dame: 0
+    coins: 0
 --- !u!1 &813024245
 GameObject:
   m_ObjectHideFlags: 0
@@ -15526,9 +15622,10 @@ GameObject:
   - component: {fileID: 821751310}
   - component: {fileID: 821751309}
   - component: {fileID: 821751311}
+  - component: {fileID: 821751312}
   m_Layer: 0
   m_Name: bee4
-  m_TagString: Untagged
+  m_TagString: EnemyFreeze
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -15644,6 +15741,28 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.36, y: 0.34}
   m_EdgeRadius: 0
+--- !u!114 &821751312
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 821751307}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 91b82c5abaf90c2468af556605dd2ad2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dame: 250
+  healthEnemy: 1800
+  maxHealthEnemy: 1800
+  healthBar: {fileID: 1383406292}
+  data:
+    id: 0
+    healthPlayer: 0
+    maxHealth: 0
+    dame: 0
+    coins: 0
 --- !u!1001 &829290370
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -17294,9 +17413,10 @@ GameObject:
   - component: {fileID: 909688996}
   - component: {fileID: 909688995}
   - component: {fileID: 909688997}
+  - component: {fileID: 909688998}
   m_Layer: 0
   m_Name: bee7
-  m_TagString: Untagged
+  m_TagString: EnemyFreeze
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -17412,6 +17532,28 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.36, y: 0.34}
   m_EdgeRadius: 0
+--- !u!114 &909688998
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 909688993}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 91b82c5abaf90c2468af556605dd2ad2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dame: 250
+  healthEnemy: 1800
+  maxHealthEnemy: 1800
+  healthBar: {fileID: 417267411}
+  data:
+    id: 0
+    healthPlayer: 0
+    maxHealth: 0
+    dame: 0
+    coins: 0
 --- !u!1 &911641460
 GameObject:
   m_ObjectHideFlags: 0
@@ -18591,9 +18733,10 @@ GameObject:
   - component: {fileID: 953564876}
   - component: {fileID: 953564878}
   - component: {fileID: 953564877}
+  - component: {fileID: 953564879}
   m_Layer: 0
   m_Name: bat6
-  m_TagString: Untagged
+  m_TagString: EnemyFreeze
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -18683,6 +18826,28 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &953564879
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 953564875}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 91b82c5abaf90c2468af556605dd2ad2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dame: 300
+  healthEnemy: 2000
+  maxHealthEnemy: 2000
+  healthBar: {fileID: 1372214815}
+  data:
+    id: 0
+    healthPlayer: 0
+    maxHealth: 0
+    dame: 0
+    coins: 0
 --- !u!1 &954526597
 GameObject:
   m_ObjectHideFlags: 0
@@ -18699,7 +18864,7 @@ GameObject:
   - component: {fileID: 954526599}
   m_Layer: 0
   m_Name: slime3
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -18733,10 +18898,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   EnemySpeed: 1
   moveleft: 1
-  dame: 0
-  healthEnemy: 0
-  maxHealthEnemy: 0
-  healthBar: {fileID: 0}
+  dame: 300
+  healthEnemy: 2000
+  maxHealthEnemy: 2000
+  healthBar: {fileID: 626771086}
   data:
     id: 0
     healthPlayer: 0
@@ -18875,9 +19040,10 @@ GameObject:
   - component: {fileID: 954957954}
   - component: {fileID: 954957953}
   - component: {fileID: 954957955}
+  - component: {fileID: 954957956}
   m_Layer: 0
   m_Name: bee6
-  m_TagString: Untagged
+  m_TagString: EnemyFreeze
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -18993,6 +19159,28 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.36, y: 0.34}
   m_EdgeRadius: 0
+--- !u!114 &954957956
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 954957951}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 91b82c5abaf90c2468af556605dd2ad2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dame: 250
+  healthEnemy: 1800
+  maxHealthEnemy: 1800
+  healthBar: {fileID: 1086067034}
+  data:
+    id: 0
+    healthPlayer: 0
+    maxHealth: 0
+    dame: 0
+    coins: 0
 --- !u!1 &956800220
 GameObject:
   m_ObjectHideFlags: 0
@@ -20064,9 +20252,11 @@ GameObject:
   - component: {fileID: 1018744925}
   - component: {fileID: 1018744927}
   - component: {fileID: 1018744926}
+  - component: {fileID: 1018744928}
+  - component: {fileID: 1018744929}
   m_Layer: 0
   m_Name: bat2
-  m_TagString: Untagged
+  m_TagString: EnemyFreeze
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -20156,6 +20346,54 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1018744928
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1018744924}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 91b82c5abaf90c2468af556605dd2ad2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dame: 280
+  healthEnemy: 1800
+  maxHealthEnemy: 1800
+  healthBar: {fileID: 59439774}
+  data:
+    id: 0
+    healthPlayer: 0
+    maxHealth: 0
+    dame: 0
+    coins: 0
+--- !u!61 &1018744929
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1018744924}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.0073757395, y: 0.025075827}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.46, y: 0.3}
+    newSize: {x: 0.46, y: 0.3}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.16204073, y: 0.24984837}
+  m_EdgeRadius: 0
 --- !u!1 &1021715574
 GameObject:
   m_ObjectHideFlags: 0
@@ -24103,6 +24341,7 @@ GameObject:
   - component: {fileID: 1205756784}
   - component: {fileID: 1205756783}
   - component: {fileID: 1205756782}
+  - component: {fileID: 1205756786}
   m_Layer: 0
   m_Name: END
   m_TagString: WIN
@@ -24234,6 +24473,32 @@ Transform:
   m_Father: {fileID: 1961719814}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!61 &1205756786
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1205756781}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.062628224, y: -0.09278163}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.64, y: 0.64}
+    newSize: {x: 0.64, y: 0.64}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.02764237, y: 0.45443672}
+  m_EdgeRadius: 0
 --- !u!1 &1212711104
 GameObject:
   m_ObjectHideFlags: 0
@@ -31609,9 +31874,10 @@ GameObject:
   - component: {fileID: 1539687414}
   - component: {fileID: 1539687413}
   - component: {fileID: 1539687416}
+  - component: {fileID: 1539687417}
   m_Layer: 0
   m_Name: bee1
-  m_TagString: Untagged
+  m_TagString: EnemyFreeze
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -31727,6 +31993,28 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.36, y: 0.34}
   m_EdgeRadius: 0
+--- !u!114 &1539687417
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1539687412}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 91b82c5abaf90c2468af556605dd2ad2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dame: 250
+  healthEnemy: 1500
+  maxHealthEnemy: 1500
+  healthBar: {fileID: 1442209339}
+  data:
+    id: 0
+    healthPlayer: 0
+    maxHealth: 0
+    dame: 0
+    coins: 0
 --- !u!1 &1540957731
 GameObject:
   m_ObjectHideFlags: 0
@@ -32383,9 +32671,11 @@ GameObject:
   - component: {fileID: 1590243071}
   - component: {fileID: 1590243070}
   - component: {fileID: 1590243069}
+  - component: {fileID: 1590243072}
+  - component: {fileID: 1590243073}
   m_Layer: 0
   m_Name: bat1
-  m_TagString: Untagged
+  m_TagString: EnemyFreeze
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -32475,6 +32765,54 @@ Transform:
   m_Father: {fileID: 1141848898}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1590243072
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1590243068}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 91b82c5abaf90c2468af556605dd2ad2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dame: 280
+  healthEnemy: 1800
+  maxHealthEnemy: 1800
+  healthBar: {fileID: 1737562693}
+  data:
+    id: 0
+    healthPlayer: 0
+    maxHealth: 0
+    dame: 0
+    coins: 0
+--- !u!61 &1590243073
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1590243068}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.007375434, y: 0.026550878}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.46, y: 0.3}
+    newSize: {x: 0.46, y: 0.3}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.16794127, y: 0.24689826}
+  m_EdgeRadius: 0
 --- !u!1 &1590788388
 GameObject:
   m_ObjectHideFlags: 0
@@ -32764,7 +33102,7 @@ GameObject:
   - component: {fileID: 1607073918}
   m_Layer: 0
   m_Name: slime6
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -32798,10 +33136,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   EnemySpeed: 1
   moveleft: 1
-  dame: 0
-  healthEnemy: 0
-  maxHealthEnemy: 0
-  healthBar: {fileID: 0}
+  dame: 320
+  healthEnemy: 2200
+  maxHealthEnemy: 2200
+  healthBar: {fileID: 1276370106}
   data:
     id: 0
     healthPlayer: 0
@@ -36306,9 +36644,11 @@ GameObject:
   - component: {fileID: 1744047569}
   - component: {fileID: 1744047571}
   - component: {fileID: 1744047570}
+  - component: {fileID: 1744047572}
+  - component: {fileID: 1744047573}
   m_Layer: 0
   m_Name: bat4
-  m_TagString: Untagged
+  m_TagString: EnemyFreeze
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -36398,6 +36738,54 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1744047572
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1744047568}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 91b82c5abaf90c2468af556605dd2ad2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dame: 280
+  healthEnemy: 1900
+  maxHealthEnemy: 1900
+  healthBar: {fileID: 305400202}
+  data:
+    id: 0
+    healthPlayer: 0
+    maxHealth: 0
+    dame: 0
+    coins: 0
+--- !u!61 &1744047573
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1744047568}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.0088507235, y: 0.028025925}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.46, y: 0.3}
+    newSize: {x: 0.46, y: 0.3}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.17089, y: 0.24394816}
+  m_EdgeRadius: 0
 --- !u!1 &1744124062
 GameObject:
   m_ObjectHideFlags: 0
@@ -36982,7 +37370,7 @@ GameObject:
   - component: {fileID: 1781260893}
   m_Layer: 0
   m_Name: slime4
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -37016,10 +37404,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   EnemySpeed: 1
   moveleft: 1
-  dame: 0
-  healthEnemy: 0
-  maxHealthEnemy: 0
-  healthBar: {fileID: 0}
+  dame: 320
+  healthEnemy: 2000
+  maxHealthEnemy: 2000
+  healthBar: {fileID: 1795660159}
   data:
     id: 0
     healthPlayer: 0
@@ -37426,7 +37814,7 @@ GameObject:
   - component: {fileID: 1791370728}
   m_Layer: 0
   m_Name: slime5
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -37460,10 +37848,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   EnemySpeed: 1
   moveleft: 1
-  dame: 0
-  healthEnemy: 0
-  maxHealthEnemy: 0
-  healthBar: {fileID: 0}
+  dame: 320
+  healthEnemy: 2000
+  maxHealthEnemy: 2000
+  healthBar: {fileID: 208671947}
   data:
     id: 0
     healthPlayer: 0
@@ -38612,9 +39000,10 @@ GameObject:
   - component: {fileID: 1834274653}
   - component: {fileID: 1834274652}
   - component: {fileID: 1834274654}
+  - component: {fileID: 1834274655}
   m_Layer: 0
   m_Name: bee5
-  m_TagString: Untagged
+  m_TagString: EnemyFreeze
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -38730,6 +39119,28 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.36, y: 0.34}
   m_EdgeRadius: 0
+--- !u!114 &1834274655
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1834274650}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 91b82c5abaf90c2468af556605dd2ad2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dame: 250
+  healthEnemy: 1800
+  maxHealthEnemy: 1800
+  healthBar: {fileID: 209061486}
+  data:
+    id: 0
+    healthPlayer: 0
+    maxHealth: 0
+    dame: 0
+    coins: 0
 --- !u!1 &1841281969
 GameObject:
   m_ObjectHideFlags: 0
@@ -43437,9 +43848,10 @@ GameObject:
   - component: {fileID: 2076579485}
   - component: {fileID: 2076579487}
   - component: {fileID: 2076579486}
+  - component: {fileID: 2076579488}
   m_Layer: 0
   m_Name: bat5
-  m_TagString: Untagged
+  m_TagString: EnemyFreeze
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -43529,6 +43941,28 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &2076579488
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2076579484}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 91b82c5abaf90c2468af556605dd2ad2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dame: 280
+  healthEnemy: 1900
+  maxHealthEnemy: 1900
+  healthBar: {fileID: 68047238}
+  data:
+    id: 0
+    healthPlayer: 0
+    maxHealth: 0
+    dame: 0
+    coins: 0
 --- !u!1 &2090438283
 GameObject:
   m_ObjectHideFlags: 0

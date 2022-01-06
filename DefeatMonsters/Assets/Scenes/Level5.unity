@@ -291,7 +291,7 @@ GameObject:
   - component: {fileID: 15354164}
   m_Layer: 0
   m_Name: rabbit4
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -325,10 +325,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   EnemySpeed: 1
   moveleft: 1
-  dame: 0
-  healthEnemy: 0
-  maxHealthEnemy: 0
-  healthBar: {fileID: 0}
+  dame: 320
+  healthEnemy: 2500
+  maxHealthEnemy: 2500
+  healthBar: {fileID: 64883397}
   data:
     id: 0
     healthPlayer: 0
@@ -2458,7 +2458,7 @@ GameObject:
   - component: {fileID: 130567099}
   m_Layer: 0
   m_Name: bug1
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2562,10 +2562,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   EnemySpeed: 1
   moveleft: 1
-  dame: 0
-  healthEnemy: 0
-  maxHealthEnemy: 0
-  healthBar: {fileID: 0}
+  dame: 250
+  healthEnemy: 1800
+  maxHealthEnemy: 1800
+  healthBar: {fileID: 696353829}
   data:
     id: 0
     healthPlayer: 0
@@ -3189,7 +3189,7 @@ GameObject:
   - component: {fileID: 169253494}
   m_Layer: 0
   m_Name: rabbit3
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3223,10 +3223,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   EnemySpeed: 1
   moveleft: 1
-  dame: 0
-  healthEnemy: 0
-  maxHealthEnemy: 0
-  healthBar: {fileID: 0}
+  dame: 320
+  healthEnemy: 2500
+  maxHealthEnemy: 2500
+  healthBar: {fileID: 1484899437}
   data:
     id: 0
     healthPlayer: 0
@@ -3792,7 +3792,7 @@ GameObject:
   - component: {fileID: 179556539}
   m_Layer: 0
   m_Name: rabbit5
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3826,10 +3826,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   EnemySpeed: 1
   moveleft: 1
-  dame: 0
-  healthEnemy: 0
-  maxHealthEnemy: 0
-  healthBar: {fileID: 0}
+  dame: 320
+  healthEnemy: 2500
+  maxHealthEnemy: 2500
+  healthBar: {fileID: 100634158}
   data:
     id: 0
     healthPlayer: 0
@@ -9182,7 +9182,7 @@ GameObject:
   - component: {fileID: 461154195}
   m_Layer: 0
   m_Name: rabbit1
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9286,10 +9286,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   EnemySpeed: 1
   moveleft: 1
-  dame: 0
-  healthEnemy: 0
-  maxHealthEnemy: 0
-  healthBar: {fileID: 0}
+  dame: 320
+  healthEnemy: 2500
+  maxHealthEnemy: 2500
+  healthBar: {fileID: 1704752979}
   data:
     id: 0
     healthPlayer: 0
@@ -10421,7 +10421,7 @@ GameObject:
   - component: {fileID: 538108992}
   m_Layer: 0
   m_Name: chicken4
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10455,10 +10455,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   EnemySpeed: 1
   moveleft: 1
-  dame: 0
-  healthEnemy: 0
-  maxHealthEnemy: 0
-  healthBar: {fileID: 0}
+  dame: 250
+  healthEnemy: 2000
+  maxHealthEnemy: 2000
+  healthBar: {fileID: 739549202}
   data:
     id: 0
     healthPlayer: 0
@@ -10836,9 +10836,11 @@ GameObject:
   - component: {fileID: 562674474}
   - component: {fileID: 562674473}
   - component: {fileID: 562674472}
+  - component: {fileID: 562674475}
+  - component: {fileID: 562674476}
   m_Layer: 0
   m_Name: bat2
-  m_TagString: Untagged
+  m_TagString: EnemyFreeze
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10928,6 +10930,54 @@ Transform:
   m_Father: {fileID: 1355154443}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &562674475
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 562674471}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 91b82c5abaf90c2468af556605dd2ad2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dame: 280
+  healthEnemy: 2000
+  maxHealthEnemy: 2000
+  healthBar: {fileID: 293183100}
+  data:
+    id: 0
+    healthPlayer: 0
+    maxHealth: 0
+    dame: 0
+    coins: 0
+--- !u!61 &562674476
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 562674471}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.0037795156, y: 0.024943031}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.46, y: 0.3}
+    newSize: {x: 0.46, y: 0.3}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.16219786, y: 0.25011396}
+  m_EdgeRadius: 0
 --- !u!1 &563013152
 GameObject:
   m_ObjectHideFlags: 0
@@ -14054,7 +14104,7 @@ GameObject:
   - component: {fileID: 706631416}
   m_Layer: 0
   m_Name: rabbit6
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -14088,10 +14138,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   EnemySpeed: 1
   moveleft: 1
-  dame: 0
-  healthEnemy: 0
-  maxHealthEnemy: 0
-  healthBar: {fileID: 0}
+  dame: 350
+  healthEnemy: 2500
+  maxHealthEnemy: 2500
+  healthBar: {fileID: 1996997613}
   data:
     id: 0
     healthPlayer: 0
@@ -18214,7 +18264,7 @@ GameObject:
   - component: {fileID: 866602951}
   m_Layer: 0
   m_Name: chicken2
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -18248,10 +18298,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   EnemySpeed: 1
   moveleft: 1
-  dame: 0
-  healthEnemy: 0
-  maxHealthEnemy: 0
-  healthBar: {fileID: 0}
+  dame: 250
+  healthEnemy: 2000
+  maxHealthEnemy: 2000
+  healthBar: {fileID: 459029302}
   data:
     id: 0
     healthPlayer: 0
@@ -21321,7 +21371,7 @@ GameObject:
   - component: {fileID: 1026099451}
   m_Layer: 0
   m_Name: chicken3
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -21355,10 +21405,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   EnemySpeed: 1
   moveleft: 1
-  dame: 0
-  healthEnemy: 0
-  maxHealthEnemy: 0
-  healthBar: {fileID: 0}
+  dame: 250
+  healthEnemy: 2000
+  maxHealthEnemy: 2000
+  healthBar: {fileID: 360235606}
   data:
     id: 0
     healthPlayer: 0
@@ -22421,9 +22471,11 @@ GameObject:
   - component: {fileID: 1078656270}
   - component: {fileID: 1078656269}
   - component: {fileID: 1078656268}
+  - component: {fileID: 1078656271}
+  - component: {fileID: 1078656272}
   m_Layer: 0
   m_Name: bat1
-  m_TagString: Untagged
+  m_TagString: EnemyFreeze
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -22513,6 +22565,54 @@ Transform:
   m_Father: {fileID: 1355154443}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1078656271
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1078656267}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 91b82c5abaf90c2468af556605dd2ad2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dame: 280
+  healthEnemy: 2000
+  maxHealthEnemy: 2000
+  healthBar: {fileID: 84920915}
+  data:
+    id: 0
+    healthPlayer: 0
+    maxHealth: 0
+    dame: 0
+    coins: 0
+--- !u!61 &1078656272
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1078656267}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.0060467944, y: 0.025698882}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.46, y: 0.3}
+    newSize: {x: 0.46, y: 0.3}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.16370846, y: 0.24860224}
+  m_EdgeRadius: 0
 --- !u!1 &1079238758
 GameObject:
   m_ObjectHideFlags: 0
@@ -24431,9 +24531,11 @@ GameObject:
   - component: {fileID: 1145670085}
   - component: {fileID: 1145670084}
   - component: {fileID: 1145670083}
+  - component: {fileID: 1145670086}
+  - component: {fileID: 1145670087}
   m_Layer: 0
   m_Name: bird1
-  m_TagString: Untagged
+  m_TagString: EnemyFreeze
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -24523,6 +24625,54 @@ Transform:
   m_Father: {fileID: 1355154443}
   m_RootOrder: 16
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1145670086
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1145670082}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 91b82c5abaf90c2468af556605dd2ad2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dame: 300
+  healthEnemy: 2500
+  maxHealthEnemy: 2500
+  healthBar: {fileID: 814175795}
+  data:
+    id: 0
+    healthPlayer: 0
+    maxHealth: 0
+    dame: 0
+    coins: 0
+--- !u!61 &1145670087
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1145670082}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.0014710203, y: -0.004407689}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.32, y: 0.32}
+    newSize: {x: 0.32, y: 0.32}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.28766888, y: 0.22303078}
+  m_EdgeRadius: 0
 --- !u!1 &1149301811
 GameObject:
   m_ObjectHideFlags: 0
@@ -27282,9 +27432,11 @@ GameObject:
   - component: {fileID: 1342079933}
   - component: {fileID: 1342079932}
   - component: {fileID: 1342079931}
+  - component: {fileID: 1342079934}
+  - component: {fileID: 1342079935}
   m_Layer: 0
   m_Name: bird2
-  m_TagString: Untagged
+  m_TagString: EnemyFreeze
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -27374,6 +27526,54 @@ Transform:
   m_Father: {fileID: 1355154443}
   m_RootOrder: 17
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1342079934
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1342079930}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 91b82c5abaf90c2468af556605dd2ad2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dame: 300
+  healthEnemy: 2500
+  maxHealthEnemy: 2500
+  healthBar: {fileID: 157577314}
+  data:
+    id: 0
+    healthPlayer: 0
+    maxHealth: 0
+    dame: 0
+    coins: 0
+--- !u!61 &1342079935
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1342079930}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.00367333, y: -0.0066115446}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.32, y: 0.32}
+    newSize: {x: 0.32, y: 0.32}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.2950236, y: 0.2186231}
+  m_EdgeRadius: 0
 --- !u!1 &1343068348
 GameObject:
   m_ObjectHideFlags: 0
@@ -28047,7 +28247,7 @@ GameObject:
   - component: {fileID: 1381945587}
   m_Layer: 0
   m_Name: END
-  m_TagString: WIN
+  m_TagString: Finish
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -28189,7 +28389,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.11200784, y: -0.30453098}
+  m_Offset: {x: -0.05981733, y: -0.092293054}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -28200,7 +28400,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.07126945, y: 0.03093803}
+  m_Size: {x: 0.036477223, y: 0.45541388}
   m_EdgeRadius: 0
 --- !u!1 &1387577255
 GameObject:
@@ -29491,7 +29691,7 @@ GameObject:
   - component: {fileID: 1486161719}
   m_Layer: 0
   m_Name: rabbit2
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -29525,10 +29725,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   EnemySpeed: 1
   moveleft: 1
-  dame: 0
-  healthEnemy: 0
-  maxHealthEnemy: 0
-  healthBar: {fileID: 0}
+  dame: 320
+  healthEnemy: 2500
+  maxHealthEnemy: 2500
+  healthBar: {fileID: 2006235930}
   data:
     id: 0
     healthPlayer: 0
@@ -29669,9 +29869,11 @@ GameObject:
   - component: {fileID: 1492953557}
   - component: {fileID: 1492953559}
   - component: {fileID: 1492953558}
+  - component: {fileID: 1492953560}
+  - component: {fileID: 1492953561}
   m_Layer: 0
   m_Name: bat8
-  m_TagString: Untagged
+  m_TagString: EnemyFreeze
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -29761,6 +29963,54 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1492953560
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1492953556}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 91b82c5abaf90c2468af556605dd2ad2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dame: 300
+  healthEnemy: 2200
+  maxHealthEnemy: 2200
+  healthBar: {fileID: 756653617}
+  data:
+    id: 0
+    healthPlayer: 0
+    maxHealth: 0
+    dame: 0
+    coins: 0
+--- !u!61 &1492953561
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1492953556}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.005290292, y: 0.024187185}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.46, y: 0.3}
+    newSize: {x: 0.46, y: 0.3}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.1621948, y: 0.25162566}
+  m_EdgeRadius: 0
 --- !u!1 &1500006731
 GameObject:
   m_ObjectHideFlags: 0
@@ -29854,9 +30104,11 @@ GameObject:
   - component: {fileID: 1505063009}
   - component: {fileID: 1505063008}
   - component: {fileID: 1505063007}
+  - component: {fileID: 1505063010}
+  - component: {fileID: 1505063011}
   m_Layer: 0
   m_Name: bat3
-  m_TagString: Untagged
+  m_TagString: EnemyFreeze
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -29946,6 +30198,54 @@ Transform:
   m_Father: {fileID: 1355154443}
   m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1505063010
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1505063006}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 91b82c5abaf90c2468af556605dd2ad2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dame: 280
+  healthEnemy: 2000
+  maxHealthEnemy: 2000
+  healthBar: {fileID: 1194691406}
+  data:
+    id: 0
+    healthPlayer: 0
+    maxHealth: 0
+    dame: 0
+    coins: 0
+--- !u!61 &1505063011
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1505063006}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.0045350045, y: 0.022675484}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.46, y: 0.3}
+    newSize: {x: 0.46, y: 0.3}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.16370848, y: 0.25464904}
+  m_EdgeRadius: 0
 --- !u!1 &1523240655
 GameObject:
   m_ObjectHideFlags: 0
@@ -31693,7 +31993,7 @@ GameObject:
   - component: {fileID: 1628550279}
   m_Layer: 0
   m_Name: chicken1
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -31847,10 +32147,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   EnemySpeed: 1
   moveleft: 1
-  dame: 0
-  healthEnemy: 0
-  maxHealthEnemy: 0
-  healthBar: {fileID: 0}
+  dame: 250
+  healthEnemy: 1800
+  maxHealthEnemy: 1800
+  healthBar: {fileID: 574140198}
   data:
     id: 0
     healthPlayer: 0
@@ -32302,9 +32602,11 @@ GameObject:
   - component: {fileID: 1642229306}
   - component: {fileID: 1642229305}
   - component: {fileID: 1642229304}
+  - component: {fileID: 1642229307}
+  - component: {fileID: 1642229308}
   m_Layer: 0
   m_Name: bat6
-  m_TagString: Untagged
+  m_TagString: EnemyFreeze
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -32394,6 +32696,54 @@ Transform:
   m_Father: {fileID: 1355154443}
   m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1642229307
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1642229303}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 91b82c5abaf90c2468af556605dd2ad2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dame: 300
+  healthEnemy: 2200
+  maxHealthEnemy: 2200
+  healthBar: {fileID: 464498889}
+  data:
+    id: 0
+    healthPlayer: 0
+    maxHealth: 0
+    dame: 0
+    coins: 0
+--- !u!61 &1642229308
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1642229303}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.0060456917, y: 0.025698856}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.46, y: 0.3}
+    newSize: {x: 0.46, y: 0.3}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.16370694, y: 0.2486023}
+  m_EdgeRadius: 0
 --- !u!1 &1645918486
 GameObject:
   m_ObjectHideFlags: 0
@@ -33631,9 +33981,11 @@ GameObject:
   - component: {fileID: 1716050154}
   - component: {fileID: 1716050156}
   - component: {fileID: 1716050155}
+  - component: {fileID: 1716050157}
+  - component: {fileID: 1716050158}
   m_Layer: 0
   m_Name: bat7
-  m_TagString: Untagged
+  m_TagString: EnemyFreeze
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -33723,6 +34075,54 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1716050157
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1716050153}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 91b82c5abaf90c2468af556605dd2ad2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dame: 300
+  healthEnemy: 2200
+  maxHealthEnemy: 2200
+  healthBar: {fileID: 1596494718}
+  data:
+    id: 0
+    healthPlayer: 0
+    maxHealth: 0
+    dame: 0
+    coins: 0
+--- !u!61 &1716050158
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1716050153}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.0045350045, y: 0.02494302}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.46, y: 0.3}
+    newSize: {x: 0.46, y: 0.3}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.16673124, y: 0.25011396}
+  m_EdgeRadius: 0
 --- !u!1 &1720208507
 GameObject:
   m_ObjectHideFlags: 0
@@ -34947,7 +35347,7 @@ GameObject:
   - component: {fileID: 1800659637}
   m_Layer: 0
   m_Name: bug2
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -34981,10 +35381,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   EnemySpeed: 1
   moveleft: 1
-  dame: 0
-  healthEnemy: 0
-  maxHealthEnemy: 0
-  healthBar: {fileID: 0}
+  dame: 250
+  healthEnemy: 1800
+  maxHealthEnemy: 1800
+  healthBar: {fileID: 477605220}
   data:
     id: 0
     healthPlayer: 0
@@ -36053,7 +36453,7 @@ GameObject:
   - component: {fileID: 1856701722}
   m_Layer: 0
   m_Name: chicken5
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -36087,10 +36487,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   EnemySpeed: 1
   moveleft: 1
-  dame: 0
-  healthEnemy: 0
-  maxHealthEnemy: 0
-  healthBar: {fileID: 0}
+  dame: 250
+  healthEnemy: 2000
+  maxHealthEnemy: 2000
+  healthBar: {fileID: 1465879891}
   data:
     id: 0
     healthPlayer: 0
@@ -37495,9 +37895,11 @@ GameObject:
   - component: {fileID: 1935761738}
   - component: {fileID: 1935761737}
   - component: {fileID: 1935761736}
+  - component: {fileID: 1935761739}
+  - component: {fileID: 1935761740}
   m_Layer: 0
   m_Name: bat5
-  m_TagString: Untagged
+  m_TagString: EnemyFreeze
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -37587,6 +37989,54 @@ Transform:
   m_Father: {fileID: 1355154443}
   m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1935761739
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1935761735}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 91b82c5abaf90c2468af556605dd2ad2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dame: 280
+  healthEnemy: 2000
+  maxHealthEnemy: 2000
+  healthBar: {fileID: 208196328}
+  data:
+    id: 0
+    healthPlayer: 0
+    maxHealth: 0
+    dame: 0
+    coins: 0
+--- !u!61 &1935761740
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1935761735}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.003023699, y: 0.02494302}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.46, y: 0.3}
+    newSize: {x: 0.46, y: 0.3}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.16673127, y: 0.25011396}
+  m_EdgeRadius: 0
 --- !u!1 &1938425198
 GameObject:
   m_ObjectHideFlags: 0
@@ -38440,9 +38890,11 @@ GameObject:
   - component: {fileID: 1989908812}
   - component: {fileID: 1989908814}
   - component: {fileID: 1989908813}
+  - component: {fileID: 1989908815}
+  - component: {fileID: 1989908816}
   m_Layer: 0
   m_Name: bat9
-  m_TagString: Untagged
+  m_TagString: EnemyFreeze
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -38532,6 +38984,54 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1989908815
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1989908811}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 91b82c5abaf90c2468af556605dd2ad2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dame: 300
+  healthEnemy: 2500
+  maxHealthEnemy: 2500
+  healthBar: {fileID: 1722514074}
+  data:
+    id: 0
+    healthPlayer: 0
+    maxHealth: 0
+    dame: 0
+    coins: 0
+--- !u!61 &1989908816
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1989908811}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.0045342147, y: 0.024187163}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.46, y: 0.3}
+    newSize: {x: 0.46, y: 0.3}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.16068417, y: 0.2516257}
+  m_EdgeRadius: 0
 --- !u!1 &1991406361
 GameObject:
   m_ObjectHideFlags: 0
@@ -39373,9 +39873,11 @@ GameObject:
   - component: {fileID: 2016625568}
   - component: {fileID: 2016625567}
   - component: {fileID: 2016625566}
+  - component: {fileID: 2016625569}
+  - component: {fileID: 2016625570}
   m_Layer: 0
   m_Name: bat4
-  m_TagString: Untagged
+  m_TagString: EnemyFreeze
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -39465,6 +39967,54 @@ Transform:
   m_Father: {fileID: 1355154443}
   m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2016625569
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2016625565}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 91b82c5abaf90c2468af556605dd2ad2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dame: 280
+  healthEnemy: 2000
+  maxHealthEnemy: 2000
+  healthBar: {fileID: 1021638930}
+  data:
+    id: 0
+    healthPlayer: 0
+    maxHealth: 0
+    dame: 0
+    coins: 0
+--- !u!61 &2016625570
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2016625565}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.004535854, y: 0.025698878}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.46, y: 0.3}
+    newSize: {x: 0.46, y: 0.3}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.16672975, y: 0.24860226}
+  m_EdgeRadius: 0
 --- !u!1 &2016856128
 GameObject:
   m_ObjectHideFlags: 0

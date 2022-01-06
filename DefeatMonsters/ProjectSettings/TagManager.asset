@@ -3,7 +3,21 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - coins
+  - traps
+  - die
+  - Event
+  - WIN
+  - Player_0
+  - Player_4
+  - Player_3
+  - Player_1
+  - Player_2
+  - healthBar
+  - Enemy
+  - CoinsText
+  - EnemyFreeze
   layers:
   - Default
   - TransparentFX
