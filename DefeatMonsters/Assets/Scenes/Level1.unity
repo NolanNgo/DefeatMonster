@@ -34137,6 +34137,10 @@ PrefabInstance:
       propertyPath: QuantityText
       value: 
       objectReference: {fileID: 3840569558800188798}
+    - target: {fileID: 3840569559014489878, guid: 5e874b8a7625f1e4b8c689884129622c, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 44dc65116207f4b46aa85443dae5ad96, type: 3}
     - target: {fileID: 3840569559083587564, guid: 5e874b8a7625f1e4b8c689884129622c, type: 3}
       propertyPath: m_AnchorMax.y
       value: 1
