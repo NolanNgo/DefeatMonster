@@ -21,6 +21,7 @@ public class PlayerController : MonoBehaviour
     private float moveX;
     private float moveY;
     private MonsterMove Enemy;
+    private MonsterFreeze EnemyFreeze;
     private Player_Animation_Controller animation_Controller;
 
     public AudioSource jumpsound;
@@ -90,6 +91,17 @@ public class PlayerController : MonoBehaviour
             }
             // Debug.Log(Enemy.healthEnemy);
         }
+        if(other.gameObject.tag == "EnemyFreeze")
+        {
+            animation_Controller.Attack();
+            EnemyFreeze = other.gameObject.GetComponent<MonsterFreeze>();
+            EnemyFreeze.Hit(dame);
+            Hit(EnemyFreeze.dame);
+            hitsound.Play();
+            if(EnemyFreeze.healthEnemy <= 0){
+                Destroy(other.gameObject);
+            }
+        }
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {
@@ -100,6 +112,11 @@ public class PlayerController : MonoBehaviour
         if(collision.tag == "WIN")
         {
             StartCoroutine(Win());
+        }
+
+        if(collision.tag == "Finish")
+        {
+            StartCoroutine(Finish());
         }
 
         if(collision.tag == "coins")
@@ -116,7 +133,7 @@ public class PlayerController : MonoBehaviour
                 hitsound.Play();
                 animation_Controller.Stun();
                 GetComponent<Rigidbody2D>().AddForce(Vector2.up * 1000);
-                Hit(1000);
+                Hit(500);
             }
             
         }
@@ -138,7 +155,16 @@ public class PlayerController : MonoBehaviour
         SaveSystem.SavePlayer(this);
         yield return new WaitForSeconds(2);
         gameManager.GameWin();
-    }   
+    }
+
+    IEnumerator Finish()
+    {
+        musicbg.Stop();
+        winsound.Play();
+        SaveSystem.SavePlayer(this);
+        yield return new WaitForSeconds(2);
+        SceneManager.LoadScene("EndCredits");
+    }
 
     IEnumerator Die()
     {
@@ -163,19 +189,19 @@ public class PlayerController : MonoBehaviour
         {
             animation_Controller.Run();
         }
-        if(moveY == 1 ){
-            animation_Controller.Stun();
-        }
+        // if(moveY == 1 ){
+        //     animation_Controller.Stun();
+        // }
         //test attack 
-        if (Input.GetKeyUp(KeyCode.Z))
-        {
-            animation_Controller.Attack();
-        }
+        // if (Input.GetKeyUp(KeyCode.Z))
+        // {
+        //     animation_Controller.Attack();
+        // }
         //test stun
-        if (Input.GetKeyDown(KeyCode.C))
-        {
-            animation_Controller.Stun();
-        }
+        // if (Input.GetKeyDown(KeyCode.C))
+        // {
+        //     animation_Controller.Stun();
+        // }
         if (Input.GetButtonDown("Jump") && (jumps < maxJump))
         {
             jumpsound.Play();

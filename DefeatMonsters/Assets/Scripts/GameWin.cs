@@ -83,7 +83,7 @@ public class GameWin : MonoBehaviour
             if(shopItems[1, ButtonRef.GetComponent<ItemsShop>().ItemID] ==2){
                 player.coins -= shopItems[2, ButtonRef.GetComponent<ItemsShop>().ItemID];
                 shopItems[3, ButtonRef.GetComponent<ItemsShop>().ItemID]--;
-                player.dame = data.dame*2;
+                player.dame = data.dame + 100;
                 // CoinsText.text = "Coins: " + coin.ToString();
                 ButtonRef.GetComponent<ItemsShop>().QuantityText.text = shopItems[3, ButtonRef.GetComponent<ItemsShop>().ItemID].ToString();
             }

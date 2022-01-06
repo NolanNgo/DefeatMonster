@@ -2810,7 +2810,7 @@ GameObject:
   - component: {fileID: 180665692}
   m_Layer: 0
   m_Name: mushroom5
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2844,10 +2844,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   EnemySpeed: 1
   moveleft: 1
-  dame: 300
-  healthEnemy: 5000
-  maxHealthEnemy: 0
-  healthBar: {fileID: 0}
+  dame: 75
+  healthEnemy: 700
+  maxHealthEnemy: 700
+  healthBar: {fileID: 1564504811}
   data:
     id: 0
     healthPlayer: 0
@@ -4348,9 +4348,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   EnemySpeed: 1
   moveleft: 1
-  dame: 35
-  healthEnemy: 1500
-  maxHealthEnemy: 1500
+  dame: 30
+  healthEnemy: 150
+  maxHealthEnemy: 150
   healthBar: {fileID: 1454314952}
   data:
     id: 0
@@ -5983,7 +5983,7 @@ GameObject:
   - component: {fileID: 328621643}
   m_Layer: 0
   m_Name: mushroom3
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6017,10 +6017,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   EnemySpeed: 1
   moveleft: 1
-  dame: 300
-  healthEnemy: 5000
-  maxHealthEnemy: 0
-  healthBar: {fileID: 0}
+  dame: 50
+  healthEnemy: 500
+  maxHealthEnemy: 500
+  healthBar: {fileID: 717673631}
   data:
     id: 0
     healthPlayer: 0
@@ -8148,8 +8148,8 @@ GameObject:
   - component: {fileID: 527221162}
   - component: {fileID: 527221161}
   - component: {fileID: 527221166}
-  - component: {fileID: 527221165}
   - component: {fileID: 527221164}
+  - component: {fileID: 527221165}
   m_Layer: 0
   m_Name: skullcap1
   m_TagString: Enemy
@@ -8257,8 +8257,8 @@ MonoBehaviour:
   EnemySpeed: 1
   moveleft: 1
   dame: 30
-  healthEnemy: 1000
-  maxHealthEnemy: 1000
+  healthEnemy: 100
+  maxHealthEnemy: 100
   healthBar: {fileID: 1820980182}
   data:
     id: 0
@@ -9300,6 +9300,7 @@ GameObject:
   - component: {fileID: 613232408}
   - component: {fileID: 613232407}
   - component: {fileID: 613232406}
+  - component: {fileID: 613232410}
   m_Layer: 0
   m_Name: END
   m_TagString: WIN
@@ -9431,6 +9432,32 @@ Transform:
   m_Father: {fileID: 533008787}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!61 &613232410
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 613232405}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.075067684, y: -0.08927037}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.64, y: 0.64}
+    newSize: {x: 0.64, y: 0.64}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.035398204, y: 0.46145925}
+  m_EdgeRadius: 0
 --- !u!1 &614341222
 GameObject:
   m_ObjectHideFlags: 0
@@ -12425,9 +12452,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   EnemySpeed: 1
   moveleft: 1
-  dame: 45
-  healthEnemy: 1000
-  maxHealthEnemy: 1000
+  dame: 30
+  healthEnemy: 200
+  maxHealthEnemy: 200
   healthBar: {fileID: 897635114}
   data:
     id: 0
@@ -19242,7 +19269,7 @@ GameObject:
   - component: {fileID: 1234547064}
   m_Layer: 0
   m_Name: mushroom1
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -19400,10 +19427,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   EnemySpeed: 1
   moveleft: 1
-  dame: 300
-  healthEnemy: 5000
-  maxHealthEnemy: 0
-  healthBar: {fileID: 0}
+  dame: 50
+  healthEnemy: 300
+  maxHealthEnemy: 300
+  healthBar: {fileID: 1327987088}
   data:
     id: 0
     healthPlayer: 0
@@ -21332,7 +21359,7 @@ GameObject:
   - component: {fileID: 1363186658}
   m_Layer: 0
   m_Name: mushroom4
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -21366,10 +21393,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   EnemySpeed: 1
   moveleft: 1
-  dame: 300
-  healthEnemy: 5000
-  maxHealthEnemy: 0
-  healthBar: {fileID: 0}
+  dame: 50
+  healthEnemy: 600
+  maxHealthEnemy: 600
+  healthBar: {fileID: 463788590}
   data:
     id: 0
     healthPlayer: 0
@@ -25602,7 +25629,7 @@ GameObject:
   - component: {fileID: 1698991864}
   m_Layer: 0
   m_Name: mushroom2
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -25636,10 +25663,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   EnemySpeed: 1
   moveleft: 1
-  dame: 300
-  healthEnemy: 5000
-  maxHealthEnemy: 0
-  healthBar: {fileID: 0}
+  dame: 50
+  healthEnemy: 400
+  maxHealthEnemy: 400
+  healthBar: {fileID: 2105216087}
   data:
     id: 0
     healthPlayer: 0
@@ -26796,7 +26823,7 @@ GameObject:
   - component: {fileID: 1771755846}
   m_Layer: 0
   m_Name: mushroom6
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -26830,10 +26857,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   EnemySpeed: 1
   moveleft: 1
-  dame: 300
-  healthEnemy: 5000
-  maxHealthEnemy: 0
-  healthBar: {fileID: 0}
+  dame: 75
+  healthEnemy: 800
+  maxHealthEnemy: 800
+  healthBar: {fileID: 1843207619}
   data:
     id: 0
     healthPlayer: 0
@@ -34110,6 +34137,10 @@ PrefabInstance:
       propertyPath: QuantityText
       value: 
       objectReference: {fileID: 3840569558800188798}
+    - target: {fileID: 3840569559014489878, guid: 5e874b8a7625f1e4b8c689884129622c, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 44dc65116207f4b46aa85443dae5ad96, type: 3}
     - target: {fileID: 3840569559083587564, guid: 5e874b8a7625f1e4b8c689884129622c, type: 3}
       propertyPath: m_AnchorMax.y
       value: 1
